@@ -19,7 +19,6 @@ export function DailyBabyCard({ dailyInfo }: DailyBabyCardProps) {
         <div className="w-10 h-10 rounded-xl bg-card/80 flex items-center justify-center text-2xl shadow-sm">
           {dailyInfo.sizeEmoji}
         </div>
-        </motion.div>
         <div>
           <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground font-body font-medium">Today's update</p>
           <h3 className="text-lg font-display font-semibold">{dailyInfo.dayTitle}</h3>
@@ -33,12 +32,9 @@ export function DailyBabyCard({ dailyInfo }: DailyBabyCardProps) {
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.8 }}
-        whileHover={{ scale: 1.01 }}
       >
         <p className="text-sm font-body text-muted-foreground">
-          <span className="inline-block mr-1">💡</span>
-          <span className="font-semibold text-foreground">Tip:</span> {dailyInfo.tip}
-          <span className="font-semibold text-foreground">Tip:</span> {dailyInfo.tip}
+          💡 <span className="font-semibold text-foreground">Tip:</span> {dailyInfo.tip}
         </p>
       </motion.div>
     </motion.div>
