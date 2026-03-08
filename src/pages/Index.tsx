@@ -107,10 +107,17 @@ const Index = () => {
             <h1 className="text-6xl md:text-8xl font-display tracking-tight leading-none">
               Ahoj,{" "}
               <motion.span
-                className="italic text-primary inline-block"
-                style={{ textShadow: '0 4px 30px hsl(350 72% 55% / 0.25)' }}
-                animate={{ scale: [1, 1.03, 1] }}
-                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                className="italic inline-block"
+                style={{
+                  backgroundImage: 'linear-gradient(90deg, hsl(350 72% 55%), hsl(330 65% 58%), hsl(300 55% 60%), hsl(280 50% 62%), hsl(350 72% 55%))',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                  backgroundSize: '200% 100%',
+                  textShadow: 'none',
+                }}
+                animate={{ backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'], scale: [1, 1.03, 1] }}
+                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
               >
                 mimino
               </motion.span>
