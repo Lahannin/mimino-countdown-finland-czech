@@ -57,7 +57,7 @@ export const czechFacts: CulturalFact[] = [
   { country: "czech", emoji: "⛸️", fact: "Outdoor ice rinks pop up in every Czech town during winter. She'll learn to skate with the other kids!" },
   { country: "czech", emoji: "🧀", fact: "Smažený sýr (fried cheese) is Czech kids' favourite fast food. She'll love it too!" },
   { country: "czech", emoji: "🐕", fact: "Pejsek a Kočička (Dog and Cat) by Josef Čapek is a beloved Czech children's book. Perfect for bedtime!" },
-  { country: "czech", emoji: "🏰", fact: "Czech Republic has over 2,000 castles — she'll grow up exploring them on family weekend trips!" },
+  { country: "czech", emoji: "🏰", fact: "Czech Republic has over 2,000 castles. She'll grow up exploring them on family weekend trips!" },
   { country: "czech", emoji: "🎨", fact: "Czech kids love výtvarná výchova (art class). She'll bring home beautiful paintings for the fridge!" },
 ];
 
