@@ -39,7 +39,7 @@ export function BilingualWordCard({ word }: BilingualWordCardProps) {
           {word.pronunciation_cz && (
             <p className="text-xs text-muted-foreground font-body mt-1 italic">/{word.pronunciation_cz}/</p>
           )}
-        </motion.div>
+        </div>
 
         {/* Finnish */}
         <motion.div
