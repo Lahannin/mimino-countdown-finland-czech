@@ -80,10 +80,10 @@ export function CountdownHero({ days, hours, minutes, seconds }: CountdownHeroPr
             <span>Week 1</span>
             <span>Week 40</span>
           </div>
-          <div className="h-2 rounded-full bg-foreground/[0.06] overflow-hidden">
+          <div className="h-2.5 rounded-full bg-foreground/[0.08] overflow-hidden border border-foreground/[0.06]">
             <motion.div
               className="h-full rounded-full"
-              style={{ background: 'linear-gradient(90deg, hsl(280 50% 62%), hsl(330 65% 58%))' }}
+              style={{ background: 'linear-gradient(90deg, hsl(280 50% 52%), hsl(330 65% 48%))' }}
               initial={{ width: 0 }}
               animate={{ width: `${Math.max(5, ((280 - days) / 280) * 100)}%` }}
               transition={{ duration: 1.5, delay: 0.5 }}
