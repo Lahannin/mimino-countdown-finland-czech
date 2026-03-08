@@ -43,7 +43,7 @@ const Index = () => {
   const seconds = Math.max(0, Math.floor((diffMs % (1000 * 60)) / 1000));
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-hidden">
       <div className="max-w-2xl mx-auto px-5 py-10 md:py-20 space-y-5">
         {/* Hero Section */}
         <motion.div
