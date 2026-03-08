@@ -17,9 +17,10 @@ export function CountdownHero({ days, hours, minutes, seconds }: CountdownHeroPr
 
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.95 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.6, delay: 0.2 }}
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-50px" }}
+      transition={{ duration: 0.5 }}
       className="rounded-3xl p-8 md:p-12 text-center shadow-elevated overflow-hidden relative"
       style={{
         background: 'linear-gradient(135deg, hsl(350 72% 55% / 0.08), hsl(0 0% 100% / 0.85), hsl(215 60% 50% / 0.06))',
