@@ -79,9 +79,6 @@ const Index = () => {
               mimino
             </motion.span>
           </h1>
-          <p className="mt-4 text-muted-foreground text-base md:text-lg font-body">
-            🇨🇿 Czech maminka & 🇫🇮 Finnish isä
-          </p>
           <p
             className="mt-2 text-lg md:text-2xl font-display font-semibold"
             style={{
