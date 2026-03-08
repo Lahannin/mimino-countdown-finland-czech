@@ -67,6 +67,25 @@ export const bilingualWords: BilingualWord[] = [
   { finnish: "napa", czech: "pupík", english: "belly button", emoji: "⭕", pronunciation_fi: "NA-pa", pronunciation_cz: "PU-peek" },
   { finnish: "röyhtäisy", czech: "říhnutí", english: "burp", emoji: "😤", pronunciation_fi: "RÖÜH-täi-sü", pronunciation_cz: "RZHEEH-nu-tee" },
   { finnish: "hikka", czech: "škytavka", english: "hiccup", emoji: "😯", pronunciation_fi: "HIK-ka", pronunciation_cz: "SHKI-tav-ka" },
+  { finnish: "korva", czech: "ouško", english: "little ear", emoji: "👂", pronunciation_fi: "KOR-va", pronunciation_cz: "OUSH-ko" },
+  { finnish: "käsi", czech: "ručička", english: "little hand", emoji: "✋", pronunciation_fi: "KÄ-si", pronunciation_cz: "RU-chich-ka" },
+  { finnish: "jalka", czech: "nožička", english: "little foot", emoji: "🦶", pronunciation_fi: "YAL-ka", pronunciation_cz: "NO-zhich-ka" },
+  { finnish: "poski", czech: "tvářička", english: "cheek", emoji: "😊", pronunciation_fi: "POS-ki", pronunciation_cz: "TVAA-rzhich-ka" },
+  { finnish: "tukka", czech: "vlásky", english: "hair", emoji: "👶", pronunciation_fi: "TUK-ka", pronunciation_cz: "VLAAS-ki" },
+  { finnish: "nalle", czech: "medvídek", english: "teddy bear", emoji: "🧸", pronunciation_fi: "NAL-le", pronunciation_cz: "MED-vee-dek" },
+  { finnish: "auto", czech: "autíčko", english: "toy car", emoji: "🚗", pronunciation_fi: "AU-to", pronunciation_cz: "AU-teech-ko" },
+  { finnish: "pallo", czech: "míček", english: "ball", emoji: "⚽", pronunciation_fi: "PAL-lo", pronunciation_cz: "MEE-chek" },
+  { finnish: "lusikka", czech: "lžička", english: "spoon", emoji: "🥄", pronunciation_fi: "LU-sik-ka", pronunciation_cz: "LZHICH-ka" },
+  { finnish: "pullo", czech: "lahvička", english: "bottle", emoji: "🍼", pronunciation_fi: "PUL-lo", pronunciation_cz: "LAH-vich-ka" },
+  { finnish: "sänky", czech: "postýlka", english: "crib", emoji: "🛏️", pronunciation_fi: "SÄN-kü", pronunciation_cz: "POS-teel-ka" },
+  { finnish: "huone", czech: "pokojíček", english: "nursery", emoji: "🏠", pronunciation_fi: "HUO-ne", pronunciation_cz: "PO-ko-yee-chek" },
+  { finnish: "valo", czech: "světýlko", english: "night light", emoji: "💡", pronunciation_fi: "VA-lo", pronunciation_cz: "SVYE-teel-ko" },
+  { finnish: "tähti", czech: "hvězdička", english: "little star", emoji: "⭐", pronunciation_fi: "TÄH-ti", pronunciation_cz: "HVYEZ-dich-ka" },
+  { finnish: "kuu", czech: "měsíček", english: "little moon", emoji: "🌙", pronunciation_fi: "kuu", pronunciation_cz: "MNYE-see-chek" },
+  { finnish: "päivä", czech: "den", english: "day", emoji: "☀️", pronunciation_fi: "PÄI-vä", pronunciation_cz: "den" },
+  { finnish: "yö", czech: "noc", english: "night", emoji: "🌃", pronunciation_fi: "üö", pronunciation_cz: "nots" },
+  { finnish: "sauna", czech: "sauna", english: "sauna", emoji: "🧖", pronunciation_fi: "SAU-na", pronunciation_cz: "SAU-na" },
+  { finnish: "mummi", czech: "babi", english: "granny", emoji: "👵", pronunciation_fi: "MUM-mi", pronunciation_cz: "BA-bi" },
 ];
 
 export function getDailyWord(currentDate: Date): BilingualWord {
@@ -74,4 +93,8 @@ export function getDailyWord(currentDate: Date): BilingualWord {
     (currentDate.getTime() - new Date(currentDate.getFullYear(), 0, 0).getTime()) / (1000 * 60 * 60 * 24)
   );
   return bilingualWords[dayOfYear % bilingualWords.length];
+}
+
+export function getRandomWord(): BilingualWord {
+  return bilingualWords[Math.floor(Math.random() * bilingualWords.length)];
 }

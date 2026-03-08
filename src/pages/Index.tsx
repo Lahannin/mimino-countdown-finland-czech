@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
 import { CountdownHero } from "@/components/CountdownHero";
 import { BabyDevelopmentCard } from "@/components/BabyDevelopmentCard";
@@ -6,8 +6,8 @@ import { DailyBabyCard } from "@/components/DailyBabyCard";
 import { CulturalFactCard } from "@/components/CulturalFactCard";
 import { BilingualWordCard } from "@/components/BilingualWordCard";
 import { getWeekSummary, getDailyBabyInfo } from "@/data/babyDevelopment";
-import { getDailyFacts } from "@/data/culturalFacts";
-import { getDailyWord } from "@/data/bilingualWords";
+import { getDailyFacts, getRandomFact } from "@/data/culturalFacts";
+import { getDailyWord, getRandomWord } from "@/data/bilingualWords";
 
 
 const DUE_DATE = new Date(2026, 4, 22); // May 22, 2026
@@ -22,8 +22,16 @@ const Index = () => {
 
   const weekData = getWeekSummary(DUE_DATE, now);
   const dailyInfo = getDailyBabyInfo(now);
-  const { finnish, czech } = getDailyFacts(now);
-  const dailyWord = getDailyWord(now);
+  const defaultFacts = getDailyFacts(now);
+  const defaultWord = getDailyWord(now);
+
+  const [czechFact, setCzechFact] = useState(defaultFacts.czech);
+  const [finnishFact, setFinnishFact] = useState(defaultFacts.finnish);
+  const [word, setWord] = useState(defaultWord);
+
+  const shuffleCzech = useCallback(() => setCzechFact(getRandomFact("czech")), []);
+  const shuffleFinnish = useCallback(() => setFinnishFact(getRandomFact("finland")), []);
+  const shuffleWord = useCallback(() => setWord(getRandomWord()), []);
 
   const diffMs = DUE_DATE.getTime() - now.getTime();
   const totalDays = Math.max(0, Math.ceil(diffMs / (1000 * 60 * 60 * 24)));
@@ -99,12 +107,12 @@ const Index = () => {
 
         {/* Cultural Facts */}
         <div className="grid md:grid-cols-2 gap-5">
-          <CulturalFactCard fact={czech} label="Daily thought from Czechia" />
-          <CulturalFactCard fact={finnish} label="Daily thought from Finland" />
+          <CulturalFactCard fact={czechFact} label="Daily thought from Czechia" onShuffle={shuffleCzech} />
+          <CulturalFactCard fact={finnishFact} label="Daily thought from Finland" onShuffle={shuffleFinnish} />
         </div>
 
         {/* Bilingual word of the day */}
-        <BilingualWordCard word={dailyWord} />
+        <BilingualWordCard word={word} onShuffle={shuffleWord} />
 
         {/* Footer */}
         <motion.div
