@@ -1,10 +1,10 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
-import { Shuffle } from "lucide-react";
+
 import { CountdownHero } from "@/components/CountdownHero";
 import { BabyDevelopmentCard } from "@/components/BabyDevelopmentCard";
 import { DailyBabyCard } from "@/components/DailyBabyCard";
-import { CulturalFactCard } from "@/components/CulturalFactCard";
+import { DailyThoughtsCard } from "@/components/DailyThoughtsCard";
 import { BilingualWordCard } from "@/components/BilingualWordCard";
 import { getWeekSummary, getDailyBabyInfo } from "@/data/babyDevelopment";
 import { getDailyFacts, getRandomFact } from "@/data/culturalFacts";
@@ -109,22 +109,7 @@ const Index = () => {
         <DailyBabyCard dailyInfo={dailyInfo} />
 
         {/* Cultural Facts */}
-        <div className="space-y-3">
-          <div className="flex items-center justify-between px-1">
-            <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground font-body font-semibold">Daily thoughts</p>
-            <button
-              onClick={shuffleFacts}
-              className="flex items-center gap-1.5 text-[10px] uppercase tracking-[0.15em] text-muted-foreground/50 hover:text-muted-foreground font-body font-medium transition-colors"
-            >
-              <Shuffle className="w-3 h-3" />
-              Shuffle
-            </button>
-          </div>
-          <div className="grid md:grid-cols-2 gap-5">
-            <CulturalFactCard fact={czechFact} label="From Czechia" />
-            <CulturalFactCard fact={finnishFact} label="From Finland" />
-          </div>
-        </div>
+        <DailyThoughtsCard czechFact={czechFact} finnishFact={finnishFact} onShuffle={shuffleFacts} />
 
         {/* Bilingual word of the day */}
         <BilingualWordCard word={word} onShuffle={shuffleWord} />
