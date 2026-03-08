@@ -65,6 +65,11 @@ export const finnishFacts: CulturalFact[] = [
   { country: "finland", emoji: "🌾", fact: "Finnish Midsummer (Juhannus) is celebrated with bonfires by the lake. The most magical family night of the year!" },
   { country: "finland", emoji: "🐰", fact: "The Easter bunny in Finland is pääsiäispupu. Finnish kids hunt for chocolate eggs in the garden!" },
   { country: "finland", emoji: "🎿", fact: "Finnish babies ride in a ahkio (Lappish sled) pulled by parents through snowy forests. So cozy!" },
+  { country: "finland", emoji: "💌", fact: "Finnish parents often write a letter to their baby before birth, sharing hopes and dreams. A beautiful keepsake!" },
+  { country: "finland", emoji: "🧑‍🍼", fact: "Finnish isi's are hands-on from day one. Changing diapers and doing night feeds is totally normal for Finnish dads!" },
+  { country: "finland", emoji: "🎁", fact: "In Finland, the äitiyspakkaus (maternity package) has been given to families since 1938. Nearly a century of caring!" },
+  { country: "finland", emoji: "🌸", fact: "Finnish naming traditions often honor grandparents. She might carry a piece of mummo's or pappa's name!" },
+  { country: "finland", emoji: "🧁", fact: "Finnish families celebrate with kakku (cake) for every milestone. First tooth, first word, first step!" },
 ];
 
 export const czechFacts: CulturalFact[] = [
@@ -127,6 +132,11 @@ export const czechFacts: CulturalFact[] = [
   { country: "czech", emoji: "🏊", fact: "Czech přehrady (reservoirs) become family beaches in summer. Kids splash, parents relax. Summer perfection!" },
   { country: "czech", emoji: "📮", fact: "Czech kids write letters to Ježíšek before Christmas. She'll carefully list her wishes every December!" },
   { country: "czech", emoji: "🧁", fact: "Medovník (honey cake) is a Czech celebration classic. Layers of honey, cream, and love. Babička's specialty!" },
+  { country: "czech", emoji: "💌", fact: "Czech parents often keep a 'deníček' (little diary) for their baby, writing memories from pregnancy onwards." },
+  { country: "czech", emoji: "🧑‍🍼", fact: "Czech tatínkové are increasingly hands-on. More and more Czech dads take paternity leave to bond with their newborns!" },
+  { country: "czech", emoji: "🎀", fact: "When a Czech baby girl is born, it's tradition to hang a pink ribbon on the front door to share the news!" },
+  { country: "czech", emoji: "🍀", fact: "Czech families often give a four-leaf clover charm to a newborn for luck. She'll be surrounded by good wishes!" },
+  { country: "czech", emoji: "👣", fact: "Many Czech families make an otisk (footprint) of baby's tiny feet right after birth. A treasured keepsake forever!" },
 ];
 
 export function getDailyFacts(currentDate: Date): { finnish: CulturalFact; czech: CulturalFact } {
