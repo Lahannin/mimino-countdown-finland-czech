@@ -58,11 +58,7 @@ export function BabyDevelopmentCard({ weekData }: BabyDevelopmentCardProps) {
       </div>
 
       <div className="mt-4 space-y-2">
-        <motion.div
-          initial={{ opacity: 0, x: -10 }}
-          animate={{ opacity: 1, x: 0 }}
-          whileHover={{ x: 4 }}
-          transition={{ delay: 0.6 }}
+        <div className="bg-czech/8 rounded-2xl px-4 py-3 border border-czech/10">
           className="bg-czech/8 rounded-2xl px-4 py-3 border border-czech/10"
         >
           <p className="font-body text-sm leading-relaxed">{weekData.czechComparison}</p>
