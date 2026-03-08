@@ -59,7 +59,7 @@ const weekSummaries: WeekSummary[] = [
     finnComparison: "🇫🇮 Half a meter! That's the length of a proper Finnish birch vihta for sauna 🧖",
     czechComparison: "🇨🇿 Weighs as much as 30 Becherovka mini bottles. Na zdraví! 🥃" },
   { week: 40, size: "Pumpkin", sizeEmoji: "🎃", sizeComparison: "Size of a small pumpkin", sizeCzech: "dýně", sizeFinnish: "kurpitsa", weight: "~3.5 kg", length: "~51 cm",
-    finnComparison: "🇫🇮 As heavy as the Finnish maternity box she'll get from isä's homeland! 📦",
+    finnComparison: "🇫🇮 As heavy as the Finnish maternity box she'll get from isi's homeland! 📦",
     czechComparison: "🇨🇿 As long as 4 rohlíky (Czech bread rolls) in a row. Snídaně time! 🥖" },
 ];
 
