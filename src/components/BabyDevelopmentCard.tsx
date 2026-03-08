@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import { WeekData } from "@/data/babyDevelopment";
+import { WeekSummary } from "@/data/babyDevelopment";
 
 interface BabyDevelopmentCardProps {
-  weekData: WeekData;
+  weekData: WeekSummary;
 }
 
 export function BabyDevelopmentCard({ weekData }: BabyDevelopmentCardProps) {
@@ -34,26 +34,6 @@ export function BabyDevelopmentCard({ weekData }: BabyDevelopmentCardProps) {
           <p className="text-xs text-muted-foreground uppercase tracking-wider font-body">Length</p>
           <p className="text-xl font-display font-semibold mt-1">{weekData.length}</p>
         </div>
-      </div>
-
-      <div className="mt-5">
-        <h3 className="text-sm font-body font-semibold uppercase tracking-wider text-muted-foreground mb-3">
-          What's new this week
-        </h3>
-        <ul className="space-y-2">
-          {weekData.developments.map((dev, i) => (
-            <motion.li
-              key={i}
-              initial={{ opacity: 0, x: -10 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.6 + i * 0.1 }}
-              className="flex items-start gap-2 font-body"
-            >
-              <span className="text-primary mt-0.5">✦</span>
-              <span>{dev}</span>
-            </motion.li>
-          ))}
-        </ul>
       </div>
     </motion.div>
   );
