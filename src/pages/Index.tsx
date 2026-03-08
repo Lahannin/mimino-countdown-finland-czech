@@ -80,7 +80,10 @@ const Index = () => {
             </motion.span>
           </h1>
           <p className="mt-4 text-muted-foreground text-base md:text-lg font-body">
-            🇨🇿 Czech maminka & 🇫🇮 Finnish isä · a holka is on the way!
+            🇨🇿 Czech maminka & 🇫🇮 Finnish isä
+          </p>
+          <p className="mt-1 text-muted-foreground text-base md:text-lg font-body">
+            a holka is on the way!
           </p>
         </motion.div>
 
