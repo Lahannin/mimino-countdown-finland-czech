@@ -52,7 +52,7 @@ const Index = () => {
             Ahoj, <span className="italic text-primary">mimino</span>
           </h1>
           <p className="mt-3 text-muted-foreground text-base font-body">
-            🇫🇮 Finnish isä & 🇨🇿 Czech maminka — a holka is on the way!
+            🇨🇿 Czech maminka & 🇫🇮 Finnish isä — a holka is on the way!
           </p>
         </motion.div>
 
@@ -67,8 +67,8 @@ const Index = () => {
 
         {/* Cultural Facts */}
         <div className="grid md:grid-cols-2 gap-4">
-          <CulturalFactCard fact={finnish} label="Today from Finland" />
           <CulturalFactCard fact={czech} label="Today from Czechia" />
+          <CulturalFactCard fact={finnish} label="Today from Finland" />
         </div>
 
         {/* Bilingual word of the day */}
@@ -83,7 +83,7 @@ const Index = () => {
         >
           <div className="inline-flex items-center gap-2 bg-card/60 backdrop-blur-sm rounded-full px-5 py-2.5 border border-border/50">
             <span className="text-xs text-muted-foreground font-body">
-              22. května 2026 · 🇫🇮 Isä ❤️ 🇨🇿 Maminka
+              22. května 2026 · 🇨🇿 Maminka ❤️ 🇫🇮 Isä
             </span>
           </div>
         </motion.div>
