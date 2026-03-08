@@ -11,7 +11,8 @@ export function BilingualWordCard({ word }: BilingualWordCardProps) {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 0.55 }}
-      className="glass rounded-3xl p-6 md:p-7 shadow-soft overflow-hidden"
+      className="rounded-3xl p-6 md:p-7 shadow-soft overflow-hidden relative"
+      style={{ background: 'linear-gradient(145deg, hsl(220 55% 58% / 0.07), hsl(0 0% 100% / 0.8), hsl(350 72% 55% / 0.06))', border: '1px solid hsl(220 55% 58% / 0.12)' }}
     >
       <div className="flex items-center gap-3 mb-5">
         <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center text-2xl">

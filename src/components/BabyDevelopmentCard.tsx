@@ -11,7 +11,8 @@ export function BabyDevelopmentCard({ weekData }: BabyDevelopmentCardProps) {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 0.4 }}
-      className="glass rounded-3xl p-6 md:p-8 shadow-soft overflow-hidden"
+      className="rounded-3xl p-6 md:p-8 shadow-soft overflow-hidden relative"
+      style={{ background: 'linear-gradient(145deg, hsl(165 35% 55% / 0.08), hsl(0 0% 100% / 0.8), hsl(350 72% 55% / 0.05))', border: '1px solid hsl(165 35% 55% / 0.12)' }}
     >
       <div className="flex items-center gap-4">
         <div className="w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-foreground/[0.04] flex items-center justify-center text-4xl md:text-5xl">
