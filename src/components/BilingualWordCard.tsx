@@ -35,7 +35,7 @@ export function BilingualWordCard({ word }: BilingualWordCardProps) {
           style={{ background: 'hsl(0 0% 0% / 0.02)' }}
         >
           <p className="text-[10px] uppercase tracking-[0.15em] text-muted-foreground font-body font-medium mb-1">🇨🇿 Čeština</p>
-          <p className="text-xl md:text-2xl font-display font-bold">{word.czech}</p>
+          <p className="text-xl md:text-2xl font-display font-bold text-gradient">{word.czech}</p>
           {word.pronunciation_cz && (
             <p className="text-xs text-muted-foreground font-body mt-1 italic">/{word.pronunciation_cz}/</p>
           )}
