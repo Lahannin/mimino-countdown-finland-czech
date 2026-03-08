@@ -50,7 +50,7 @@ export function BabyDevelopmentCard({ weekData }: BabyDevelopmentCardProps) {
         >
           <p className="text-[10px] text-muted-foreground uppercase tracking-[0.15em] font-body font-medium">Length</p>
           <p className="text-2xl font-display font-bold mt-1">{weekData.length}</p>
-        </motion.div>
+        </div>
       </div>
 
       <div className="mt-4 space-y-2">
