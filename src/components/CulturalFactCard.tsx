@@ -14,17 +14,19 @@ export function CulturalFactCard({ fact, label }: CulturalFactCardProps) {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: isFinland ? 0.6 : 0.8 }}
-      className={`rounded-2xl p-5 md:p-6 border border-border shadow-sm ${
-        isFinland ? "bg-finn/10" : "bg-czech/10"
+      className={`glass rounded-3xl p-5 md:p-6 shadow-soft border ${
+        isFinland ? "border-finn/15" : "border-czech/15"
       }`}
     >
-      <div className="flex items-center gap-2 mb-3">
-        <span className="text-2xl">{fact.emoji}</span>
-        <h3 className="text-sm font-body font-semibold uppercase tracking-wider text-muted-foreground">
-          {label}
-        </h3>
+      <div className={`w-8 h-8 rounded-lg flex items-center justify-center text-lg mb-3 ${
+        isFinland ? "bg-finn/10" : "bg-czech/10"
+      }`}>
+        {isFinland ? "🇫🇮" : "🇨🇿"}
       </div>
-      <p className="font-body text-foreground leading-relaxed">
+      <h3 className="text-[10px] font-body font-semibold uppercase tracking-[0.2em] text-muted-foreground mb-2">
+        {label}
+      </h3>
+      <p className="font-body text-foreground/90 leading-relaxed text-[15px]">
         {fact.emoji} {fact.fact}
       </p>
     </motion.div>
