@@ -52,7 +52,7 @@ const weekSummaries: WeekSummary[] = [
   { week: 37, size: "Swiss chard", sizeEmoji: "🌿", sizeComparison: "Size of a Swiss chard bunch", sizeCzech: "mangold", sizeFinnish: "lehtimangoldi", weight: "~2.9 kg", length: "~48 cm",
     finnComparison: "🇫🇮 About half the weight of a newborn reindeer. Almost twins! 🦌",
     czechComparison: "🇨🇿 As tall as a Hurvínek puppet! Ready for her stage debut 🎭" },
-  { week: 38, size: "Leek", sizeEmoji: "🥒", sizeComparison: "Length of a leek", sizeCzech: "pórek", sizeFinnish: "purjosipuli", weight: "~3.1 kg", length: "~49 cm",
+  { week: 38, size: "Leek", sizeEmoji: "🥬", sizeComparison: "Length of a leek", sizeCzech: "pórek", sizeFinnish: "purjosipuli", weight: "~3.1 kg", length: "~49 cm",
     finnComparison: "🇫🇮 Weighs about the same as a big double batch of pulla dough. Baking time! 🧁",
     czechComparison: "🇨🇿 As long as a standard Czech hockey stick (for babies, obviously) 🏒" },
   { week: 39, size: "Watermelon", sizeEmoji: "🍉", sizeComparison: "Small watermelon size", sizeCzech: "vodní meloun", sizeFinnish: "vesimeloni", weight: "~3.3 kg", length: "~50 cm",
