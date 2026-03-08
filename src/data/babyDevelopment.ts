@@ -103,7 +103,7 @@ const dailyDevelopments: DailyBabyInfo[] = [
   { dayTitle: "Kidney function", sizeEmoji: "💧", funFact: "Her kidneys are fully functional inside and producing urine into the amniotic fluid.", tip: "She pees into the amniotic fluid, and swallows it again! Circle of life." },
   { dayTitle: "Day & night", sizeEmoji: "🌙", funFact: "She's developing a sense of day and night based on maminka's hormones and light.", tip: "Keeping a regular schedule now might help her sleep patterns after birth." },
   { dayTitle: "Liver developing", sizeEmoji: "🫀", funFact: "Her liver is storing iron and getting ready to process bilirubin after birth.", tip: "Slight jaundice is common in newborns, usually resolves on its own." },
-  { dayTitle: "Almost there!", sizeEmoji: "🎉", funFact: "She's nearly full-term, getting ready to meet isä and maminka!", tip: "Make sure the hospital bag is packed, holka can come any time!" },
+  { dayTitle: "Almost there!", sizeEmoji: "🎉", funFact: "She's nearly full-term, getting ready to meet isi and maminka!", tip: "Make sure the hospital bag is packed, holka can come any time!" },
   { dayTitle: "Final countdown", sizeEmoji: "🚀", funFact: "She's in launch position inside! Head down and preparing for the grand entrance.", tip: "Rest when you can, soon sleep will be a luxury!" },
   { dayTitle: "Smooth skin", sizeEmoji: "🛡️", funFact: "The lanugo (fine body hair) is mostly gone, replaced by smooth baby skin underneath the vernix.", tip: "Some lanugo might remain on her shoulders and back at birth." },
   { dayTitle: "Strong heartbeat", sizeEmoji: "❤️", funFact: "Her heart beats about 110-160 times per minute inside the womb, twice as fast as maminka's!", tip: "You can hear it with a stethoscope or doppler at checkups." },

@@ -120,7 +120,7 @@ const Index = () => {
         >
           <div className="inline-flex items-center gap-2 bg-card/60 backdrop-blur-sm rounded-full px-5 py-2.5 border border-border/50">
             <span className="text-xs text-muted-foreground font-body">
-              22. května 2026 · 🇨🇿 Maminka ❤️ 🇫🇮 Isä
+              22. května 2026 · 🇨🇿 Maminka ❤️ 🇫🇮 Isi
             </span>
           </div>
         </motion.div>

@@ -28,9 +28,9 @@ export const finnishFacts: CulturalFact[] = [
   { country: "finland", emoji: "🦌", fact: "There are about 200,000 reindeer in Finland, more than people in some cities! She'll meet them on visits to isi's homeland." },
   { country: "finland", emoji: "☀️", fact: "In Finnish Lapland, the sun doesn't set for 73 days in summer. Imagine bedtime during midnight sun!" },
   { country: "finland", emoji: "🐻", fact: "The bear is a sacred animal in Finnish folklore. Finnish kids grow up hearing stories of Otso, the forest king." },
-  { country: "finland", emoji: "🥟", fact: "Karelian pies (karjalanpiirakka) with egg butter are a Finnish comfort food. Isä will teach her to love them!" },
-  { country: "finland", emoji: "🧸", fact: "Finnish toy design is famously minimalist and creative. She'll play with beautiful Nordic toys from isä's family!" },
-  { country: "finland", emoji: "🌲", fact: "Finland has more trees per person than any other European country. She'll have endless forests to explore with isä!" },
+  { country: "finland", emoji: "🥟", fact: "Karelian pies (karjalanpiirakka) with egg butter are a Finnish comfort food. Isi will teach her to love them!" },
+  { country: "finland", emoji: "🧸", fact: "Finnish toy design is famously minimalist and creative. She'll play with beautiful Nordic toys from isi's family!" },
+  { country: "finland", emoji: "🌲", fact: "Finland has more trees per person than any other European country. She'll have endless forests to explore with isi!" },
 ];
 
 export const czechFacts: CulturalFact[] = [
