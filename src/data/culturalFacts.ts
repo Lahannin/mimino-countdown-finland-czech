@@ -44,7 +44,7 @@ export const finnishFacts: CulturalFact[] = [
   { country: "finland", emoji: "🫧", fact: "Baby swimming (vauvauinti) is hugely popular in Finland. Many babies start as young as 3 months!" },
   { country: "finland", emoji: "🎨", fact: "Finnish design extends to baby gear. Marimekko and Reima make some of the most beautiful kids' clothes in the world!" },
   { country: "finland", emoji: "🌛", fact: "Finnish bedtime stories often feature the forest and its creatures. Metsän tarina (tales of the forest) are magical." },
-  { country: "finland", emoji: "🫶", fact: "In Finland, both parents get generous parental leave. Isi will have plenty of time to bond with her!" },
+  { country: "finland", emoji: "🫶", fact: "In Finland, parents get generous parental leave. When visiting Finland, isi will have all the time in the world for her!" },
   { country: "finland", emoji: "🧸", fact: "Every Finnish child has a unilelu (sleep toy). Finding THE one is a serious family mission!" },
   { country: "finland", emoji: "🎶", fact: "Nuku nuku nurmilintu is one of the oldest Finnish lullabies. Isi might already be practicing it!" },
   { country: "finland", emoji: "🍄", fact: "Finnish kids go mushroom foraging with family in autumn. She'll learn to tell kantarelli from others!" },
