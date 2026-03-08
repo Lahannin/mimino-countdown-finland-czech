@@ -28,7 +28,7 @@ export function DailyThoughtsCard({ czechFact, finnishFact, onShuffle }: DailyTh
           </div>
           <div>
             <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground font-body font-medium">Daily thoughts</p>
-            <p className="text-sm font-body text-muted-foreground">From her two homelands</p>
+            <p className="text-sm font-body font-semibold text-gradient">From her two homelands</p>
           </div>
         </div>
         <button
