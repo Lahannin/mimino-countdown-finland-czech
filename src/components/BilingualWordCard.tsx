@@ -22,7 +22,6 @@ export function BilingualWordCard({ word }: BilingualWordCardProps) {
         >
           {word.emoji}
         </div>
-        </motion.div>
         <div>
           <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground font-body font-medium">Word of the day</p>
           <p className="text-sm font-body text-muted-foreground">{word.english}</p>

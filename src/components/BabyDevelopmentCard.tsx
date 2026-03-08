@@ -22,7 +22,6 @@ export function BabyDevelopmentCard({ weekData }: BabyDevelopmentCardProps) {
         >
           {weekData.sizeEmoji}
         </div>
-        </motion.div>
         <div className="flex-1">
           <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground font-body font-medium mb-0.5">This week</p>
           <h2 className="text-2xl md:text-3xl font-display font-semibold">

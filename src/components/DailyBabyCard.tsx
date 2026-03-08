@@ -37,7 +37,7 @@ export function DailyBabyCard({ dailyInfo }: DailyBabyCardProps) {
       >
         <p className="text-sm font-body text-muted-foreground">
           <span className="inline-block mr-1">💡</span>
-          </motion.span>
+          <span className="font-semibold text-foreground">Tip:</span> {dailyInfo.tip}
           <span className="font-semibold text-foreground">Tip:</span> {dailyInfo.tip}
         </p>
       </motion.div>
