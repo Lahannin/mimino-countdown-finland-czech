@@ -88,12 +88,14 @@
   }
 
   html {
-    background-color: hsl(var(--background));
+    background: var(--gradient-page);
+    background-attachment: fixed;
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
     background: var(--gradient-page);
+    background-attachment: fixed;
     min-height: 100vh;
     overscroll-behavior: none;
   }
