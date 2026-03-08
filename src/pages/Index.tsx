@@ -84,6 +84,8 @@ const Index = () => {
           </p>
         </motion.div>
 
+        <div className="h-4 md:h-6" />
+
         {/* Countdown */}
         <CountdownHero days={totalDays} hours={hours} minutes={minutes} seconds={seconds} />
 
