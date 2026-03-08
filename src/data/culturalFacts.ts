@@ -35,7 +35,7 @@ export const finnishFacts: CulturalFact[] = [
 
 export const czechFacts: CulturalFact[] = [
   { country: "czech", emoji: "📅", fact: "Czech parents celebrate svátek (name day). Every day has an assigned name! She'll get extra celebrations growing up." },
-  { country: "czech", emoji: "🐾", fact: "Krteček (The Little Mole) is the most beloved Czech cartoon character. Every Czech kid grows up watching him — she will too!" },
+  { country: "czech", emoji: "🐾", fact: "Krteček (The Little Mole) is the most beloved Czech cartoon character. Every Czech kid grows up watching him, and she will too!" },
   { country: "czech", emoji: "🍯", fact: "Czech babičky (grandmothers) are legendary for their koláče (sweet pastries). Homemade treats await her!" },
   { country: "czech", emoji: "🎵", fact: "Czech families sing 'Halí belí' and other ukolébavky (lullabies) to babies. Maminka will sing them to her!" },
   { country: "czech", emoji: "🌸", fact: "Czech tradition says you should carry a newborn around the house to show her every room of her new home!" },
