@@ -41,11 +41,6 @@ const Index = () => {
           transition={{ duration: 0.8 }}
           className="text-center relative px-6 pt-4 pb-14 md:pt-6 md:pb-20"
         >
-          {/* Subtle background blob */}
-          <div
-            className="absolute -top-16 -left-16 w-48 h-48 rounded-full opacity-[0.04] pointer-events-none blur-3xl"
-            style={{ background: 'hsl(350 72% 55%)' }}
-          />
 
           <div className="relative z-10">
             <motion.p
