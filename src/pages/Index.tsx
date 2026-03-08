@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
+import { Shuffle } from "lucide-react";
 import { CountdownHero } from "@/components/CountdownHero";
 import { BabyDevelopmentCard } from "@/components/BabyDevelopmentCard";
 import { DailyBabyCard } from "@/components/DailyBabyCard";
