@@ -54,14 +54,14 @@ const Index = () => {
         >
           {/* Floating decorative elements */}
           <motion.span
-            className="absolute top-0 left-[15%] text-xl opacity-40 pointer-events-none"
+            className="absolute -top-2 left-[10%] md:left-[15%] text-xl opacity-40 pointer-events-none hidden md:inline"
             animate={{ y: [0, -10, 0], x: [0, 3, 0], rotate: [0, 10, 0] }}
             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
           >
             ✨
           </motion.span>
           <motion.span
-            className="absolute top-2 right-[18%] text-lg opacity-30 pointer-events-none"
+            className="absolute -top-1 right-[12%] md:right-[18%] text-lg opacity-30 pointer-events-none hidden md:inline"
             animate={{ y: [0, -8, 0], x: [0, -4, 0], rotate: [0, -15, 0] }}
             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }}
           >
