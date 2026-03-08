@@ -11,9 +11,9 @@ export function BabyDevelopmentCard({ weekData }: BabyDevelopmentCardProps) {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 0.4 }}
-      whileHover={{ y: -2, boxShadow: '0 12px 40px -8px hsl(165 35% 55% / 0.15)' }}
+      whileHover={{ y: -2, boxShadow: '0 12px 40px -8px hsl(280 50% 62% / 0.15)' }}
       className="rounded-3xl p-6 md:p-8 shadow-soft overflow-hidden relative"
-      style={{ background: 'linear-gradient(145deg, hsl(165 35% 55% / 0.08), hsl(0 0% 100% / 0.8), hsl(350 72% 55% / 0.05))', border: '1px solid hsl(165 35% 55% / 0.12)' }}
+      style={{ background: 'linear-gradient(145deg, hsl(280 50% 62% / 0.06), hsl(0 0% 100% / 0.8), hsl(330 65% 58% / 0.06))', border: '1px solid hsl(280 50% 62% / 0.12)' }}
     >
       <div className="flex items-center gap-4">
         <motion.div
