@@ -29,7 +29,7 @@ export function CountdownHero({ days, hours, minutes, seconds }: CountdownHeroPr
       }}
     >
 
-      <p className="text-muted-foreground font-body text-xs uppercase tracking-[0.2em] mb-6 relative z-10">
+      <p className="text-xs uppercase tracking-[0.2em] mb-6 relative z-10 font-body font-semibold text-gradient">
         Countdown to meeting her
       </p>
       <div className="flex justify-center gap-3 md:gap-5 relative z-10">
