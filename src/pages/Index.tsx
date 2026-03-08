@@ -45,54 +45,87 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <div className="max-w-2xl mx-auto px-5 py-10 md:py-20 space-y-5">
-        {/* Header */}
+        {/* Hero Section */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center pb-2 relative"
+          className="text-center relative rounded-3xl px-6 py-14 md:py-20 overflow-hidden"
+          style={{
+            background: 'linear-gradient(160deg, hsl(350 72% 55% / 0.10), hsl(0 0% 100% / 0.7) 40%, hsl(165 35% 55% / 0.08) 70%, hsl(350 72% 55% / 0.06))',
+            border: '1px solid hsl(350 72% 55% / 0.12)',
+            boxShadow: '0 16px 48px -12px hsl(350 72% 55% / 0.12)',
+          }}
         >
-          {/* Floating decorative elements */}
+          {/* Decorative blobs */}
+          <motion.div
+            className="absolute -top-16 -left-16 w-48 h-48 rounded-full opacity-15 pointer-events-none"
+            style={{ background: 'radial-gradient(circle, hsl(350 72% 55%), transparent)' }}
+            animate={{ y: [0, -10, 0], x: [0, 5, 0] }}
+            transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+          />
+          <motion.div
+            className="absolute -bottom-12 -right-12 w-40 h-40 rounded-full opacity-10 pointer-events-none"
+            style={{ background: 'radial-gradient(circle, hsl(165 35% 55%), transparent)' }}
+            animate={{ y: [0, 8, 0], x: [0, -4, 0] }}
+            transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+          />
+
+          {/* Floating sparkles */}
           <motion.span
-            className="absolute -top-2 left-[10%] md:left-[15%] text-xl opacity-40 pointer-events-none hidden md:inline"
-            animate={{ y: [0, -10, 0], x: [0, 3, 0], rotate: [0, 10, 0] }}
+            className="absolute top-6 left-[10%] text-2xl opacity-30 pointer-events-none"
+            animate={{ y: [0, -12, 0], x: [0, 4, 0], rotate: [0, 15, 0] }}
             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
           >
             ✨
           </motion.span>
           <motion.span
-            className="absolute -top-1 right-[12%] md:right-[18%] text-lg opacity-30 pointer-events-none hidden md:inline"
-            animate={{ y: [0, -8, 0], x: [0, -4, 0], rotate: [0, -15, 0] }}
+            className="absolute top-8 right-[12%] text-xl opacity-25 pointer-events-none"
+            animate={{ y: [0, -8, 0], x: [0, -5, 0], rotate: [0, -10, 0] }}
             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }}
           >
             💕
           </motion.span>
-
-          <h1 className="text-5xl md:text-7xl font-display tracking-tight leading-tight">
-            Ahoj,{" "}
-            <motion.span
-              className="italic text-primary inline-block"
-              style={{ textShadow: '0 2px 20px hsl(350 72% 55% / 0.2)' }}
-              animate={{ scale: [1, 1.02, 1] }}
-              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-            >
-              mimino
-            </motion.span>
-          </h1>
-          <p
-            className="mt-2 text-lg md:text-2xl font-display font-semibold"
-            style={{
-              backgroundImage: 'linear-gradient(90deg, hsl(340, 80%, 55%), hsl(320, 70%, 60%), hsl(280, 60%, 65%))',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-            }}
+          <motion.span
+            className="absolute bottom-8 left-[20%] text-lg opacity-20 pointer-events-none"
+            animate={{ y: [0, -6, 0], rotate: [0, 8, -8, 0] }}
+            transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut", delay: 2 }}
           >
-            Our holka is on her way! ✨
-          </p>
-        </motion.div>
+            🌸
+          </motion.span>
 
-        <div className="h-4 md:h-6" />
+          <div className="relative z-10">
+            <motion.p
+              className="text-xs uppercase tracking-[0.25em] text-muted-foreground font-body mb-4"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.3 }}
+            >
+              Arriving May 2026
+            </motion.p>
+
+            <h1 className="text-6xl md:text-8xl font-display tracking-tight leading-none">
+              Ahoj,{" "}
+              <motion.span
+                className="italic text-primary inline-block"
+                style={{ textShadow: '0 4px 30px hsl(350 72% 55% / 0.25)' }}
+                animate={{ scale: [1, 1.03, 1] }}
+                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+              >
+                mimino
+              </motion.span>
+            </h1>
+
+            <motion.p
+              className="mt-4 text-xl md:text-3xl font-display font-semibold text-primary"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.6 }}
+            >
+              Our holka is on her way! ✨
+            </motion.p>
+          </div>
+        </motion.div>
 
         {/* Countdown */}
         <CountdownHero days={totalDays} hours={hours} minutes={minutes} seconds={seconds} />
