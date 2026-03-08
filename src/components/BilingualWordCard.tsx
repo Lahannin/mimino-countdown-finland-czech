@@ -13,7 +13,7 @@ export function BilingualWordCard({ word }: BilingualWordCardProps) {
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5 }}
       className="rounded-3xl p-6 md:p-7 shadow-soft overflow-hidden relative"
-      style={{ background: 'linear-gradient(145deg, hsl(280 50% 62% / 0.12), hsl(0 0% 100% / 0.75), hsl(330 65% 58% / 0.12))', border: '1px solid hsl(280 50% 62% / 0.18)' }}
+      style={{ background: 'hsl(0 0% 100% / 0.6)', backdropFilter: 'blur(16px)', border: '1px solid hsl(0 0% 0% / 0.06)' }}
     >
       <div className="flex items-center gap-3 mb-5">
         <div
