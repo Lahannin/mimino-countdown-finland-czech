@@ -140,7 +140,20 @@ export function getDailyFacts(currentDate: Date): { finnish: CulturalFact; czech
   };
 }
 
+const recentFinnish: number[] = [];
+const recentCzech: number[] = [];
+
 export function getRandomFact(country: "finland" | "czech"): CulturalFact {
   const pool = country === "finland" ? finnishFacts : czechFacts;
-  return pool[Math.floor(Math.random() * pool.length)];
+  const recent = country === "finland" ? recentFinnish : recentCzech;
+
+  let idx: number;
+  do {
+    idx = Math.floor(Math.random() * pool.length);
+  } while (recent.includes(idx) && pool.length > 10);
+
+  recent.push(idx);
+  if (recent.length > 10) recent.shift();
+
+  return pool[idx];
 }

@@ -91,6 +91,16 @@ export function getDailyWord(currentDate: Date): BilingualWord {
   return bilingualWords[dayOfYear % bilingualWords.length];
 }
 
+const recentWords: number[] = [];
+
 export function getRandomWord(): BilingualWord {
-  return bilingualWords[Math.floor(Math.random() * bilingualWords.length)];
+  let idx: number;
+  do {
+    idx = Math.floor(Math.random() * bilingualWords.length);
+  } while (recentWords.includes(idx) && bilingualWords.length > 10);
+
+  recentWords.push(idx);
+  if (recentWords.length > 10) recentWords.shift();
+
+  return bilingualWords[idx];
 }
