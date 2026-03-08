@@ -17,7 +17,8 @@ export function BabyDevelopmentCard({ weekData }: BabyDevelopmentCardProps) {
     >
       <div className="flex items-center gap-4">
         <motion.div
-          className="w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-foreground/[0.04] flex items-center justify-center text-4xl md:text-5xl"
+          className="w-14 h-14 md:w-16 md:h-16 rounded-2xl flex items-center justify-center text-4xl md:text-5xl"
+          style={{ background: 'linear-gradient(135deg, hsl(280 50% 62% / 0.1), hsl(330 65% 58% / 0.1))' }}
           animate={{ rotate: [0, 5, -5, 0] }}
           transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
         >
