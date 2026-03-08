@@ -22,6 +22,7 @@ const Index = () => {
   const weekData = getWeekSummary(DUE_DATE, now);
   const dailyInfo = getDailyBabyInfo(now);
   const { finnish, czech } = getDailyFacts(now);
+  const dailyWord = getDailyWord(now);
 
   const diffMs = DUE_DATE.getTime() - now.getTime();
   const totalDays = Math.max(0, Math.ceil(diffMs / (1000 * 60 * 60 * 24)));
