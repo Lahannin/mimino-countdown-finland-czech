@@ -13,13 +13,23 @@ export function CulturalFactCard({ fact, label }: CulturalFactCardProps) {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: isFinland ? 0.6 : 0.8 }}
-      className={`glass rounded-3xl p-5 md:p-6 shadow-soft border ${
-        isFinland ? "border-finn/15" : "border-czech/15"
-      }`}
+      transition={{ duration: 0.6, delay: isFinland ? 0.6 : 0.5 }}
+      className="rounded-3xl p-5 md:p-6 shadow-soft relative overflow-hidden"
+      style={{
+        background: isFinland
+          ? 'linear-gradient(145deg, hsl(215 60% 50% / 0.06), hsl(0 0% 100% / 0.8))'
+          : 'linear-gradient(145deg, hsl(355 70% 50% / 0.06), hsl(0 0% 100% / 0.8))',
+        border: `1px solid ${isFinland ? 'hsl(215 60% 50% / 0.15)' : 'hsl(355 70% 50% / 0.15)'}`,
+      }}
     >
+      {/* Accent dot */}
+      <div
+        className="absolute top-0 right-0 w-16 h-16 rounded-bl-full opacity-[0.08]"
+        style={{ background: isFinland ? 'hsl(215 60% 50%)' : 'hsl(355 70% 50%)' }}
+      />
+
       <div className={`w-8 h-8 rounded-lg flex items-center justify-center text-lg mb-3 ${
-        isFinland ? "bg-finn/10" : "bg-czech/10"
+        isFinland ? "bg-finn/15" : "bg-czech/15"
       }`}>
         {isFinland ? "🇫🇮" : "🇨🇿"}
       </div>
