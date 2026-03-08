@@ -9,9 +9,9 @@ export function DailyBabyCard({ dailyInfo }: DailyBabyCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: 0.5 }}
-      whileHover={{ y: -2, boxShadow: '0 12px 40px -8px hsl(350 72% 55% / 0.12)' }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-50px" }}
+      transition={{ duration: 0.5 }}
       className="rounded-3xl p-6 md:p-7 shadow-soft border border-primary/10 overflow-hidden relative"
       style={{ background: 'linear-gradient(135deg, hsl(350 72% 55% / 0.08), hsl(15 80% 85% / 0.35), hsl(0 0% 100% / 0.7))' }}
     >
