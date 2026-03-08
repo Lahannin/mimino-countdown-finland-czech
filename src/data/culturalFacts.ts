@@ -15,7 +15,7 @@ export const finnishFacts: CulturalFact[] = [
   { country: "finland", emoji: "🫎", fact: "The Finnish word 'sisu' describes inner strength and resilience, a quality she'll inherit from isä!" },
   { country: "finland", emoji: "🧤", fact: "Finnish grandmothers (mummo) knit the warmest socks and mittens. She'll get plenty from mummo!" },
   { country: "finland", emoji: "🪵", fact: "Summer at a mökki (lakeside cabin) is sacred Finnish family time. Isä will take her there someday!" },
-  { country: "finland", emoji: "🎭", fact: "The Moomins were created by Finnish-Swedish author Tove Jansson. Every Finnish kid grows up with Muumit — she will too!" },
+  { country: "finland", emoji: "🎭", fact: "The Moomins were created by Finnish-Swedish author Tove Jansson. Every Finnish kid grows up with Muumit, and she will too!" },
   { country: "finland", emoji: "🛷", fact: "Finnish kids sled on everything: real sleds, plastic bags, even cardboard boxes. Pure childhood joy!" },
   { country: "finland", emoji: "🏒", fact: "Ice hockey is practically a religion in Finland. She might be skating before she can walk!" },
   { country: "finland", emoji: "🏠", fact: "The Finnish word 'koti' means home, and Finns value home life deeply. Cozy evenings (with baby!) are a way of life." },
