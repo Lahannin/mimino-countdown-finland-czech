@@ -52,7 +52,7 @@ const Index = () => {
             Ahoj, <span className="italic text-primary">mimino</span>
           </h1>
           <p className="mt-3 text-muted-foreground text-base font-body">
-            🇫🇮 Finnish isä & 🇨🇿 Czech maminka — a holka is on the way!
+            🇨🇿 Czech maminka & 🇫🇮 Finnish isä — a holka is on the way!
           </p>
         </motion.div>
 
