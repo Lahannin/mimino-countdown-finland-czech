@@ -36,12 +36,7 @@ export function DailyBabyCard({ dailyInfo }: DailyBabyCardProps) {
         whileHover={{ scale: 1.01 }}
       >
         <p className="text-sm font-body text-muted-foreground">
-          <motion.span
-            className="inline-block mr-1"
-            animate={{ rotate: [0, 15, -15, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-          >
-            💡
+          <span className="inline-block mr-1">💡</span>
           </motion.span>
           <span className="font-semibold text-foreground">Tip:</span> {dailyInfo.tip}
         </p>
