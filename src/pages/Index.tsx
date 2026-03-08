@@ -8,7 +8,7 @@ import { BilingualWordCard } from "@/components/BilingualWordCard";
 import { getWeekSummary, getDailyBabyInfo } from "@/data/babyDevelopment";
 import { getDailyFacts } from "@/data/culturalFacts";
 import { getDailyWord } from "@/data/bilingualWords";
-import type { Transition } from "framer-motion";
+
 
 const DUE_DATE = new Date(2026, 4, 22); // May 22, 2026
 
