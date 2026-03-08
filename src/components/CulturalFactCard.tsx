@@ -29,9 +29,8 @@ export function CulturalFactCard({ fact, label }: CulturalFactCardProps) {
       />
 
       <div
-        className={`w-8 h-8 rounded-lg flex items-center justify-center text-lg mb-3 ${
-          isFinland ? "bg-finn/15" : "bg-czech/15"
-        }`}
+        className="w-8 h-8 rounded-lg flex items-center justify-center text-lg mb-3"
+        style={{ background: 'hsl(0 0% 0% / 0.03)' }}
       >
         {isFinland ? "🇫🇮" : "🇨🇿"}
       </div>

@@ -51,7 +51,7 @@ export function BilingualWordCard({ word }: BilingualWordCardProps) {
           {word.pronunciation_fi && (
             <p className="text-xs text-muted-foreground font-body mt-1 italic">/{word.pronunciation_fi}/</p>
           )}
-        </motion.div>
+        </div>
       </div>
     </motion.div>
   );
