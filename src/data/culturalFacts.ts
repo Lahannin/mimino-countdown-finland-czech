@@ -102,7 +102,7 @@ export const czechFacts: CulturalFact[] = [
   { country: "czech", emoji: "🧶", fact: "Czech babičky (grandmas) crochet baby blankets as gifts. She'll be wrapped in handmade love!" },
   { country: "czech", emoji: "🍎", fact: "Many Czech families make their own baby food from garden-fresh fruits. Homemade jablečné pyré (applesauce) is a staple!" },
   { country: "czech", emoji: "🐸", fact: "Žabák (the little frog) appears in many Czech nursery rhymes. She'll learn to sing them with maminka!" },
-  { country: "czech", emoji: "🛝", fact: "Czech playgrounds (hřiště) are everywhere — even the smallest village has one. She'll never run out of places to play!" },
+  { country: "czech", emoji: "🛝", fact: "Czech playgrounds (hřiště) are everywhere, even the smallest village has one. She'll never run out of places to play!" },
   { country: "czech", emoji: "🧴", fact: "Czech parents swear by Aviril baby cream, a classic product that's been protecting Czech baby skin for decades!" },
   { country: "czech", emoji: "🎂", fact: "A Czech baby's first birthday is a big deal! Families gather for dort (cake) and celebrate every milestone." },
   { country: "czech", emoji: "📺", fact: "Večerníček (bedtime story show) airs every night at 7pm on Czech TV. It's been a family ritual since 1965!" },
