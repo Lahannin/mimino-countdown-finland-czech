@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { CountdownHero } from "@/components/CountdownHero";
 import { BabyDevelopmentCard } from "@/components/BabyDevelopmentCard";
-import { DailyBabyCard } from "@/components/DailyBabyCard";
+
 import { CulturalFactCard } from "@/components/CulturalFactCard";
 import { BilingualWordCard } from "@/components/BilingualWordCard";
 import { getWeekSummary, getDailyBabyInfo } from "@/data/babyDevelopment";
@@ -96,11 +96,8 @@ const Index = () => {
         {/* Countdown */}
         <CountdownHero days={totalDays} hours={hours} minutes={minutes} seconds={seconds} />
 
-        {/* Weekly size summary */}
-        <BabyDevelopmentCard weekData={weekData} />
-
-        {/* Daily baby info */}
-        <DailyBabyCard dailyInfo={dailyInfo} />
+        {/* Weekly + daily combined */}
+        <BabyDevelopmentCard weekData={weekData} dailyInfo={dailyInfo} />
 
         {/* Cultural Facts */}
         <div className="grid md:grid-cols-2 gap-4">
