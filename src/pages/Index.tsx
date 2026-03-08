@@ -33,7 +33,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen overflow-x-hidden">
-      <div className="max-w-2xl mx-auto px-5 py-10 md:py-20 space-y-5">
+      <div className="max-w-2xl mx-auto px-5 py-12 md:py-24 space-y-8 md:space-y-10">
         {/* Hero Section */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
