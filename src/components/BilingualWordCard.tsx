@@ -11,13 +11,18 @@ export function BilingualWordCard({ word }: BilingualWordCardProps) {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 0.55 }}
+      whileHover={{ y: -2, boxShadow: '0 12px 40px -8px hsl(220 55% 58% / 0.12)' }}
       className="rounded-3xl p-6 md:p-7 shadow-soft overflow-hidden relative"
       style={{ background: 'linear-gradient(145deg, hsl(220 55% 58% / 0.07), hsl(0 0% 100% / 0.8), hsl(350 72% 55% / 0.06))', border: '1px solid hsl(220 55% 58% / 0.12)' }}
     >
       <div className="flex items-center gap-3 mb-5">
-        <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center text-2xl">
+        <motion.div
+          className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center text-2xl"
+          animate={{ scale: [1, 1.1, 1], rotate: [0, 5, -5, 0] }}
+          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+        >
           {word.emoji}
-        </div>
+        </motion.div>
         <div>
           <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground font-body font-medium">Word of the day</p>
           <p className="text-sm font-body text-muted-foreground">{word.english}</p>
@@ -26,22 +31,30 @@ export function BilingualWordCard({ word }: BilingualWordCardProps) {
 
       <div className="grid grid-cols-2 gap-3">
         {/* Czech */}
-        <div className="bg-czech/12 rounded-2xl p-4 border border-czech/15 text-center">
+        <motion.div
+          className="bg-czech/12 rounded-2xl p-4 border border-czech/15 text-center"
+          whileHover={{ scale: 1.04, borderColor: 'hsl(355 70% 50% / 0.25)' }}
+          transition={{ type: "spring", stiffness: 300 }}
+        >
           <p className="text-[10px] uppercase tracking-[0.15em] text-muted-foreground font-body font-medium mb-1">🇨🇿 Čeština</p>
           <p className="text-xl md:text-2xl font-display font-bold">{word.czech}</p>
           {word.pronunciation_cz && (
             <p className="text-xs text-muted-foreground font-body mt-1 italic">/{word.pronunciation_cz}/</p>
           )}
-        </div>
+        </motion.div>
 
         {/* Finnish */}
-        <div className="bg-finn/12 rounded-2xl p-4 border border-finn/15 text-center">
+        <motion.div
+          className="bg-finn/12 rounded-2xl p-4 border border-finn/15 text-center"
+          whileHover={{ scale: 1.04, borderColor: 'hsl(215 60% 50% / 0.25)' }}
+          transition={{ type: "spring", stiffness: 300 }}
+        >
           <p className="text-[10px] uppercase tracking-[0.15em] text-muted-foreground font-body font-medium mb-1">🇫🇮 Suomi</p>
           <p className="text-xl md:text-2xl font-display font-bold">{word.finnish}</p>
           {word.pronunciation_fi && (
             <p className="text-xs text-muted-foreground font-body mt-1 italic">/{word.pronunciation_fi}/</p>
           )}
-        </div>
+        </motion.div>
       </div>
     </motion.div>
   );

@@ -11,6 +11,18 @@ import { getDailyWord } from "@/data/bilingualWords";
 
 const DUE_DATE = new Date(2026, 4, 22); // May 22, 2026
 
+const floatingHeart = {
+  animate: {
+    y: [0, -6, 0],
+    rotate: [0, 5, -5, 0],
+  },
+  transition: {
+    duration: 4,
+    repeat: Infinity,
+    ease: "easeInOut",
+  },
+};
+
 const Index = () => {
   const [now, setNow] = useState(new Date());
 
@@ -38,10 +50,34 @@ const Index = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center pb-2"
+          className="text-center pb-2 relative"
         >
+          {/* Floating decorative elements */}
+          <motion.span
+            className="absolute top-0 left-[15%] text-xl opacity-40 pointer-events-none"
+            animate={{ y: [0, -10, 0], x: [0, 3, 0], rotate: [0, 10, 0] }}
+            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+          >
+            ✨
+          </motion.span>
+          <motion.span
+            className="absolute top-2 right-[18%] text-lg opacity-30 pointer-events-none"
+            animate={{ y: [0, -8, 0], x: [0, -4, 0], rotate: [0, -15, 0] }}
+            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+          >
+            💕
+          </motion.span>
+
           <h1 className="text-5xl md:text-7xl font-display tracking-tight leading-tight">
-            Ahoj, <span className="italic text-primary" style={{ textShadow: '0 2px 20px hsl(350 72% 55% / 0.2)' }}>mimino</span>
+            Ahoj,{" "}
+            <motion.span
+              className="italic text-primary inline-block"
+              style={{ textShadow: '0 2px 20px hsl(350 72% 55% / 0.2)' }}
+              animate={{ scale: [1, 1.02, 1] }}
+              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+            >
+              mimino
+            </motion.span>
           </h1>
           <p className="mt-4 text-muted-foreground text-base md:text-lg font-body">
             🇨🇿 Czech maminka & 🇫🇮 Finnish isä · a holka is on the way!
@@ -73,11 +109,27 @@ const Index = () => {
           transition={{ delay: 1.2 }}
           className="text-center pt-4 pb-10"
         >
-          <div className="inline-flex items-center gap-2 bg-card/60 backdrop-blur-sm rounded-full px-5 py-2.5 border border-border/50">
+          <motion.div
+            className="inline-flex items-center gap-2 bg-card/60 backdrop-blur-sm rounded-full px-5 py-2.5 border border-border/50"
+            whileHover={{ scale: 1.03 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          >
             <span className="text-xs text-muted-foreground font-body">
-              22. května 2026 · 🇨🇿 Maminka ❤️ 🇫🇮 Isä
+              22. května 2026 ·{" "}
+              <motion.span className="inline-block" {...floatingHeart}>🇨🇿</motion.span>
+              {" "}Maminka{" "}
+              <motion.span
+                className="inline-block"
+                animate={{ scale: [1, 1.2, 1] }}
+                transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+              >
+                ❤️
+              </motion.span>
+              {" "}
+              <motion.span className="inline-block" {...floatingHeart}>🇫🇮</motion.span>
+              {" "}Isä
             </span>
-          </div>
+          </motion.div>
         </motion.div>
       </div>
     </div>
