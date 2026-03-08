@@ -94,7 +94,7 @@ const Index = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.6 }}
             >
-              Our holka is on her way! ✨
+              Our holčička is on her way! ✨
             </motion.p>
           </div>
         </motion.div>
