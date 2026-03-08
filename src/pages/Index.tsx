@@ -12,17 +12,6 @@ import { getDailyWord } from "@/data/bilingualWords";
 
 const DUE_DATE = new Date(2026, 4, 22); // May 22, 2026
 
-const floatingAnim = {
-  y: [0, -6, 0] as number[],
-  rotate: [0, 5, -5, 0] as number[],
-};
-
-const floatingTransition = {
-  duration: 4,
-  repeat: Infinity,
-  ease: "easeInOut" as const,
-};
-
 const Index = () => {
   const [now, setNow] = useState(new Date());
 
