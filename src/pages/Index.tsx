@@ -126,7 +126,7 @@ const Index = () => {
                 ❤️
               </motion.span>
               {" "}
-              <motion.span className="inline-block" {...floatingHeart}>🇫🇮</motion.span>
+              <motion.span className="inline-block" animate={floatingAnim} transition={floatingTransition}>🇫🇮</motion.span>
               {" "}Isä
             </span>
           </motion.div>
