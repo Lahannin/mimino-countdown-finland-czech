@@ -4,8 +4,10 @@ import { CountdownHero } from "@/components/CountdownHero";
 import { BabyDevelopmentCard } from "@/components/BabyDevelopmentCard";
 import { DailyBabyCard } from "@/components/DailyBabyCard";
 import { CulturalFactCard } from "@/components/CulturalFactCard";
+import { BilingualWordCard } from "@/components/BilingualWordCard";
 import { getWeekSummary, getDailyBabyInfo } from "@/data/babyDevelopment";
 import { getDailyFacts } from "@/data/culturalFacts";
+import { getDailyWord } from "@/data/bilingualWords";
 
 const DUE_DATE = new Date(2026, 4, 22); // May 22, 2026
 
