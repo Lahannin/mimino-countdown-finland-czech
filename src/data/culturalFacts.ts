@@ -118,7 +118,7 @@ export const czechFacts: CulturalFact[] = [
   { country: "czech", emoji: "🌙", fact: "Měsíček (little moon) is what Czech parents call bedtime. 'Jdeme na měsíček' means it's sleepy time!" },
   { country: "czech", emoji: "🐓", fact: "Many Czech grandparents keep chickens. She might collect warm eggs from babička's garden someday!" },
   { country: "czech", emoji: "🏕️", fact: "Czech summer camps (tábory) are a rite of passage. Kids spend weeks in nature learning skills and making friends!" },
-  { country: "czech", emoji: "🎻", fact: "Czech musical tradition runs deep — the saying goes 'Co Čech, to muzikant' (every Czech is a musician)!" },
+  { country: "czech", emoji: "🎻", fact: "Czech musical tradition runs deep. The saying goes 'Co Čech, to muzikant' (every Czech is a musician)!" },
   { country: "czech", emoji: "🧇", fact: "Lázeňské oplatky (spa wafers) from Karlovy Vary are a Czech treat. Thin, sweet, and irresistible for kids!" },
   { country: "czech", emoji: "🐱", fact: "Pohádky z mechu a kapradí (Tales from Moss and Fern) features adorable forest creatures. Czech bedtime magic!" },
   { country: "czech", emoji: "🎪", fact: "Czech circuses (cirkusy) still tour the countryside every summer. She'll be mesmerized by the performers!" },
