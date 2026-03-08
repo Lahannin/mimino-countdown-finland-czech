@@ -23,7 +23,7 @@ export function CountdownHero({ days, hours, minutes, seconds }: CountdownHeroPr
       transition={{ duration: 0.5 }}
       className="rounded-3xl p-8 md:p-12 text-center shadow-soft overflow-hidden relative"
       style={{
-        background: 'hsl(0 0% 100% / 0.6)',
+        background: 'linear-gradient(145deg, hsl(350 72% 55% / 0.03), hsl(0 0% 100% / 0.7), hsl(215 60% 50% / 0.02))',
         backdropFilter: 'blur(16px)',
         border: '1px solid hsl(0 0% 0% / 0.06)',
       }}
