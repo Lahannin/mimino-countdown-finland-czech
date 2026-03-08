@@ -83,7 +83,7 @@ export function CountdownHero({ days, hours, minutes, seconds }: CountdownHeroPr
           <div className="h-2 rounded-full bg-foreground/[0.06] overflow-hidden">
             <motion.div
               className="h-full rounded-full"
-              style={{ background: 'linear-gradient(90deg, hsl(165 35% 55%), hsl(330 65% 58%))' }}
+              style={{ background: 'linear-gradient(90deg, hsl(280 50% 62%), hsl(330 65% 58%))' }}
               initial={{ width: 0 }}
               animate={{ width: `${Math.max(5, ((280 - days) / 280) * 100)}%` }}
               transition={{ duration: 1.5, delay: 0.5 }}
