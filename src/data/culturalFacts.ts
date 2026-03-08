@@ -19,7 +19,7 @@ export const finnishFacts: CulturalFact[] = [
   { country: "finland", emoji: "🛷", fact: "Finnish kids sled on everything: real sleds, plastic bags, even cardboard boxes. Pure childhood joy!" },
   { country: "finland", emoji: "🏒", fact: "Ice hockey is practically a religion in Finland. She might be skating before she can walk!" },
   { country: "finland", emoji: "🏠", fact: "The Finnish word 'koti' means home, and Finns value home life deeply. Cozy evenings (with baby!) are a way of life." },
-  { country: "finland", emoji: "☕", fact: "Finns drink more coffee per capita than anyone. She'll smell kahvi at every family gathering with isä's side!" },
+  { country: "finland", emoji: "☕", fact: "Finns drink more coffee per capita than anyone. She'll smell kahvi at every family gathering with isi's side!" },
   { country: "finland", emoji: "🫐", fact: "Finnish kids pick wild berries and mushrooms every summer thanks to 'jokamiehenoikeus' (everyman's rights). A foraging adventure awaits!" },
   { country: "finland", emoji: "🐟", fact: "Kalakukko (fish baked inside bread) is Finnish comfort food from Kuopio. Isä might make it for her someday!" },
   { country: "finland", emoji: "🌌", fact: "An old Finnish legend says northern lights (revontulet) are sparks from a firefox's tail. What a bedtime story for her!" },
