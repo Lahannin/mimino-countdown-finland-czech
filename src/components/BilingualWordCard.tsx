@@ -16,7 +16,10 @@ export function BilingualWordCard({ word }: BilingualWordCardProps) {
       style={{ background: 'linear-gradient(145deg, hsl(280 50% 62% / 0.04), hsl(0 0% 100% / 0.7), hsl(330 65% 58% / 0.03))', backdropFilter: 'blur(16px)', border: '1px solid hsl(0 0% 0% / 0.06)' }}
     >
       <div className="flex items-center gap-3 mb-5">
-        <div className="text-2xl">
+        <div
+          className="w-10 h-10 rounded-xl flex items-center justify-center text-2xl"
+          style={{ background: 'hsl(0 0% 0% / 0.03)' }}
+        >
           {word.emoji}
         </div>
         <div>
@@ -25,9 +28,12 @@ export function BilingualWordCard({ word }: BilingualWordCardProps) {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-6 text-center">
+      <div className="grid grid-cols-2 gap-3">
         {/* Czech */}
-        <div>
+        <div
+          className="rounded-2xl p-4 border border-border/50 text-center"
+          style={{ background: 'hsl(0 0% 0% / 0.02)' }}
+        >
           <p className="text-[10px] uppercase tracking-[0.15em] text-muted-foreground font-body font-medium mb-1">🇨🇿 Čeština</p>
           <p className="text-xl md:text-2xl font-display font-bold">{word.czech}</p>
           {word.pronunciation_cz && (
@@ -36,7 +42,10 @@ export function BilingualWordCard({ word }: BilingualWordCardProps) {
         </div>
 
         {/* Finnish */}
-        <div>
+        <div
+          className="rounded-2xl p-4 border border-border/50 text-center"
+          style={{ background: 'hsl(0 0% 0% / 0.02)' }}
+        >
           <p className="text-[10px] uppercase tracking-[0.15em] text-muted-foreground font-body font-medium mb-1">🇫🇮 Suomi</p>
           <p className="text-xl md:text-2xl font-display font-bold">{word.finnish}</p>
           {word.pronunciation_fi && (

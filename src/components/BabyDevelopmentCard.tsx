@@ -1,12 +1,11 @@
 import { motion } from "framer-motion";
-import { WeekSummary, DailyBabyInfo } from "@/data/babyDevelopment";
+import { WeekSummary } from "@/data/babyDevelopment";
 
 interface BabyDevelopmentCardProps {
   weekData: WeekSummary;
-  dailyInfo: DailyBabyInfo;
 }
 
-export function BabyDevelopmentCard({ weekData, dailyInfo }: BabyDevelopmentCardProps) {
+export function BabyDevelopmentCard({ weekData }: BabyDevelopmentCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -16,9 +15,11 @@ export function BabyDevelopmentCard({ weekData, dailyInfo }: BabyDevelopmentCard
       className="rounded-3xl p-6 md:p-8 shadow-soft overflow-hidden relative"
       style={{ background: 'linear-gradient(145deg, hsl(280 50% 62% / 0.04), hsl(0 0% 100% / 0.7), hsl(330 65% 58% / 0.03))', backdropFilter: 'blur(16px)', border: '1px solid hsl(0 0% 0% / 0.06)' }}
     >
-      {/* Week summary */}
       <div className="flex items-center gap-4">
-        <div className="text-4xl md:text-5xl">
+        <div
+          className="w-14 h-14 md:w-16 md:h-16 rounded-2xl flex items-center justify-center text-4xl md:text-5xl"
+          style={{ background: 'hsl(0 0% 0% / 0.03)' }}
+        >
           {weekData.sizeEmoji}
         </div>
         <div className="flex-1">
@@ -35,41 +36,31 @@ export function BabyDevelopmentCard({ weekData, dailyInfo }: BabyDevelopmentCard
         </div>
       </div>
 
-      <div className="mt-5 grid grid-cols-2 gap-6 text-center">
-        <div>
+      <div className="mt-5 grid grid-cols-2 gap-3">
+        <div
+          className="rounded-2xl p-4 text-center"
+          style={{ background: 'hsl(0 0% 0% / 0.03)' }}
+        >
           <p className="text-[10px] text-muted-foreground uppercase tracking-[0.15em] font-body font-medium">Weight</p>
           <p className="text-2xl font-display font-bold mt-1">{weekData.weight}</p>
         </div>
-        <div>
+        <div
+          className="rounded-2xl p-4 text-center"
+          style={{ background: 'hsl(0 0% 0% / 0.03)' }}
+        >
           <p className="text-[10px] text-muted-foreground uppercase tracking-[0.15em] font-body font-medium">Length</p>
           <p className="text-2xl font-display font-bold mt-1">{weekData.length}</p>
         </div>
       </div>
 
-      <div className="mt-4 space-y-1.5 text-sm font-body text-muted-foreground leading-relaxed">
-        <p>{weekData.czechComparison}</p>
-        <p>{weekData.finnComparison}</p>
-      </div>
-
-      {/* Divider */}
-      <div className="my-6 border-t border-border/40" />
-
-      {/* Daily update */}
-      <div className="flex items-center gap-3 mb-3">
-        <div className="text-2xl">
-          {dailyInfo.sizeEmoji}
+      <div className="mt-4 space-y-2">
+        <div className="rounded-2xl px-4 py-3 border border-border/50" style={{ background: 'hsl(0 0% 0% / 0.02)' }}>
+          <p className="font-body text-sm leading-relaxed">{weekData.czechComparison}</p>
         </div>
-        <div>
-          <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground font-body font-medium">Today's update</p>
-          <h3 className="text-lg font-display font-semibold">{dailyInfo.dayTitle}</h3>
+        <div className="rounded-2xl px-4 py-3 border border-border/50" style={{ background: 'hsl(0 0% 0% / 0.02)' }}>
+          <p className="font-body text-sm leading-relaxed">{weekData.finnComparison}</p>
         </div>
       </div>
-      <p className="font-body text-foreground/90 leading-relaxed text-[15px]">
-        {dailyInfo.funFact}
-      </p>
-      <p className="mt-3 text-sm font-body text-muted-foreground">
-        💡 <span className="font-semibold text-foreground/80">Tip:</span> {dailyInfo.tip}
-      </p>
     </motion.div>
   );
 }
