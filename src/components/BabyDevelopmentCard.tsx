@@ -32,6 +32,9 @@ export function BabyDevelopmentCard({ weekData }: BabyDevelopmentCardProps) {
           <p className="text-muted-foreground font-body text-sm mt-0.5">
             {weekData.sizeComparison}
           </p>
+          <p className="text-muted-foreground/70 font-body text-xs mt-1 italic">
+            🇨🇿 {weekData.sizeCzech} · 🇫🇮 {weekData.sizeFinnish}
+          </p>
         </div>
       </div>
 
