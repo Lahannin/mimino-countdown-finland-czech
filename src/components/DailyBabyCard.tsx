@@ -12,11 +12,10 @@ export function DailyBabyCard({ dailyInfo }: DailyBabyCardProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5 }}
-      className="rounded-3xl p-6 md:p-7 shadow-soft overflow-hidden relative"
-      style={{ background: 'linear-gradient(145deg, hsl(350 72% 55% / 0.03), hsl(0 0% 100% / 0.7), hsl(15 80% 85% / 0.08))', backdropFilter: 'blur(16px)', border: '1px solid hsl(0 0% 0% / 0.06)' }}
+      className="px-2 py-4"
     >
       <div className="flex items-center gap-3 mb-3">
-        <div className="w-10 h-10 rounded-xl bg-card/80 flex items-center justify-center text-2xl shadow-sm">
+        <div className="text-2xl">
           {dailyInfo.sizeEmoji}
         </div>
         <div>
@@ -27,11 +26,9 @@ export function DailyBabyCard({ dailyInfo }: DailyBabyCardProps) {
       <p className="font-body text-foreground/90 leading-relaxed text-[15px]">
         {dailyInfo.funFact}
       </p>
-      <div className="mt-4 bg-card/60 backdrop-blur-sm rounded-2xl px-4 py-3 border border-border/50">
-        <p className="text-sm font-body text-muted-foreground">
-          💡 <span className="font-semibold text-foreground">Tip:</span> {dailyInfo.tip}
-        </p>
-      </div>
+      <p className="mt-3 text-sm font-body text-muted-foreground">
+        💡 <span className="font-semibold text-foreground/80">Tip:</span> {dailyInfo.tip}
+      </p>
     </motion.div>
   );
 }

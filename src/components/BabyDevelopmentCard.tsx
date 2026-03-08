@@ -12,14 +12,10 @@ export function BabyDevelopmentCard({ weekData }: BabyDevelopmentCardProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5 }}
-      className="rounded-3xl p-6 md:p-8 shadow-soft overflow-hidden relative"
-      style={{ background: 'linear-gradient(145deg, hsl(280 50% 62% / 0.04), hsl(0 0% 100% / 0.7), hsl(330 65% 58% / 0.03))', backdropFilter: 'blur(16px)', border: '1px solid hsl(0 0% 0% / 0.06)' }}
+      className="px-2 py-4"
     >
       <div className="flex items-center gap-4">
-        <div
-          className="w-14 h-14 md:w-16 md:h-16 rounded-2xl flex items-center justify-center text-4xl md:text-5xl"
-          style={{ background: 'hsl(0 0% 0% / 0.03)' }}
-        >
+        <div className="text-4xl md:text-5xl">
           {weekData.sizeEmoji}
         </div>
         <div className="flex-1">
@@ -36,30 +32,20 @@ export function BabyDevelopmentCard({ weekData }: BabyDevelopmentCardProps) {
         </div>
       </div>
 
-      <div className="mt-5 grid grid-cols-2 gap-3">
-        <div
-          className="rounded-2xl p-4 text-center"
-          style={{ background: 'hsl(0 0% 0% / 0.03)' }}
-        >
+      <div className="mt-5 grid grid-cols-2 gap-6 text-center">
+        <div>
           <p className="text-[10px] text-muted-foreground uppercase tracking-[0.15em] font-body font-medium">Weight</p>
           <p className="text-2xl font-display font-bold mt-1">{weekData.weight}</p>
         </div>
-        <div
-          className="rounded-2xl p-4 text-center"
-          style={{ background: 'hsl(0 0% 0% / 0.03)' }}
-        >
+        <div>
           <p className="text-[10px] text-muted-foreground uppercase tracking-[0.15em] font-body font-medium">Length</p>
           <p className="text-2xl font-display font-bold mt-1">{weekData.length}</p>
         </div>
       </div>
 
-      <div className="mt-4 space-y-2">
-        <div className="rounded-2xl px-4 py-3 border border-border/50" style={{ background: 'hsl(0 0% 0% / 0.02)' }}>
-          <p className="font-body text-sm leading-relaxed">{weekData.czechComparison}</p>
-        </div>
-        <div className="rounded-2xl px-4 py-3 border border-border/50" style={{ background: 'hsl(0 0% 0% / 0.02)' }}>
-          <p className="font-body text-sm leading-relaxed">{weekData.finnComparison}</p>
-        </div>
+      <div className="mt-5 space-y-2 text-sm font-body text-muted-foreground leading-relaxed">
+        <p>{weekData.czechComparison}</p>
+        <p>{weekData.finnComparison}</p>
       </div>
     </motion.div>
   );
