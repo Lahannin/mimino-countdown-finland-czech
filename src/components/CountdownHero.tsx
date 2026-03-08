@@ -27,18 +27,10 @@ export function CountdownHero({ days, hours, minutes, seconds }: CountdownHeroPr
         border: '1px solid hsl(350 72% 55% / 0.12)',
       }}
     >
-      {/* Decorative blobs */}
-      <motion.div
-        className="absolute -top-14 -right-14 w-36 h-36 rounded-full opacity-20 blur-xl"
+      {/* Subtle accent */}
+      <div
+        className="absolute -top-14 -right-14 w-36 h-36 rounded-full opacity-[0.06] blur-xl pointer-events-none"
         style={{ background: 'hsl(350 72% 55%)' }}
-        animate={{ y: [0, -8, 0], x: [0, 4, 0] }}
-        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-      />
-      <motion.div
-        className="absolute -bottom-10 -left-10 w-28 h-28 rounded-full opacity-10 blur-xl"
-        style={{ background: 'hsl(215 60% 50%)' }}
-        animate={{ y: [0, 6, 0], x: [0, -4, 0] }}
-        transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
       />
 
       <p className="text-muted-foreground font-body text-xs uppercase tracking-[0.2em] mb-6 relative z-10">
