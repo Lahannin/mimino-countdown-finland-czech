@@ -38,7 +38,7 @@ export const finnishFacts: CulturalFact[] = [
   { country: "finland", emoji: "🦢", fact: "The whooper swan is Finland's national bird. Finnish kids learn to spot them on summer lake trips!" },
   { country: "finland", emoji: "🎅", fact: "Finnish kids know the REAL Santa lives in Korvatunturi, Lapland. She'll get to visit him someday with isi!" },
   { country: "finland", emoji: "🥣", fact: "Puuro (porridge) is the ultimate Finnish baby food. Simple, warm, and loved by every Finnish child." },
-  { country: "finland", emoji: "🌿", fact: "Finnish babies are often given a vihta (birch whisk) toy — a nod to sauna culture from day one!" },
+  { country: "finland", emoji: "🌿", fact: "Finnish babies are often given a vihta (birch whisk) toy, a nod to sauna culture from day one!" },
   { country: "finland", emoji: "🧤", fact: "Finnish kids play outside in all weather. The saying goes: 'There's no bad weather, only bad clothes!'" },
   { country: "finland", emoji: "🪺", fact: "Finnish parents often choose nature-inspired names. The forest and lakes are deeply woven into naming traditions." },
   { country: "finland", emoji: "🫧", fact: "Baby swimming (vauvauinti) is hugely popular in Finland. Many babies start as young as 3 months!" },
