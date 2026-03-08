@@ -44,17 +44,17 @@ export function BabyDevelopmentCard({ weekData }: BabyDevelopmentCardProps) {
           initial={{ opacity: 0, x: -10 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.6 }}
-          className="bg-finn/8 rounded-2xl px-4 py-3 border border-finn/10"
+          className="bg-czech/8 rounded-2xl px-4 py-3 border border-czech/10"
         >
-          <p className="font-body text-sm leading-relaxed">{weekData.finnComparison}</p>
+          <p className="font-body text-sm leading-relaxed">{weekData.czechComparison}</p>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, x: -10 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.7 }}
-          className="bg-czech/8 rounded-2xl px-4 py-3 border border-czech/10"
+          className="bg-finn/8 rounded-2xl px-4 py-3 border border-finn/10"
         >
-          <p className="font-body text-sm leading-relaxed">{weekData.czechComparison}</p>
+          <p className="font-body text-sm leading-relaxed">{weekData.finnComparison}</p>
         </motion.div>
       </div>
     </motion.div>
