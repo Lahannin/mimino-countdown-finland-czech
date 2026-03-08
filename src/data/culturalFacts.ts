@@ -124,7 +124,7 @@ export const czechFacts: CulturalFact[] = [
   { country: "czech", emoji: "🎪", fact: "Czech circuses (cirkusy) still tour the countryside every summer. She'll be mesmerized by the performers!" },
   { country: "czech", emoji: "🥨", fact: "Czech pretzels (preclíky) are a classic snack for kids. Crunchy, salty, and perfect for little hands!" },
   { country: "czech", emoji: "🧺", fact: "Czech families love picking mushrooms (houby) in autumn forests. It's a national obsession and family tradition!" },
-  { country: "czech", emoji: "🏊", fact: "Czech přehrady (reservoirs) become family beaches in summer. Kids splash, parents relax — summer perfection!" },
+  { country: "czech", emoji: "🏊", fact: "Czech přehrady (reservoirs) become family beaches in summer. Kids splash, parents relax. Summer perfection!" },
   { country: "czech", emoji: "📮", fact: "Czech kids write letters to Ježíšek before Christmas. She'll carefully list her wishes every December!" },
   { country: "czech", emoji: "🧁", fact: "Medovník (honey cake) is a Czech celebration classic. Layers of honey, cream, and love — babička's specialty!" },
 ];
