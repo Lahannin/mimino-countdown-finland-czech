@@ -65,6 +65,11 @@ export const finnishFacts: CulturalFact[] = [
   { country: "finland", emoji: "🌾", fact: "Finnish Midsummer (Juhannus) is celebrated with bonfires by the lake. The most magical family night of the year!" },
   { country: "finland", emoji: "🐰", fact: "The Easter bunny in Finland is pääsiäispupu. Finnish kids hunt for chocolate eggs in the garden!" },
   { country: "finland", emoji: "🎿", fact: "Finnish babies ride in a ahkio (Lappish sled) pulled by parents through snowy forests. So cozy!" },
+  { country: "finland", emoji: "💌", fact: "Finnish parents often write a letter to their baby before birth, sharing hopes and dreams. A beautiful keepsake!" },
+  { country: "finland", emoji: "🧑‍🍼", fact: "Finnish isi's are hands-on from day one. Changing diapers and doing night feeds is totally normal for Finnish dads!" },
+  { country: "finland", emoji: "🎁", fact: "In Finland, the äitiyspakkaus (maternity package) has been given to families since 1938. Nearly a century of caring!" },
+  { country: "finland", emoji: "🌸", fact: "Finnish naming traditions often honor grandparents. She might carry a piece of mummo's or pappa's name!" },
+  { country: "finland", emoji: "🧁", fact: "Finnish families celebrate with kakku (cake) for every milestone. First tooth, first word, first step!" },
 ];
 
 export const czechFacts: CulturalFact[] = [
