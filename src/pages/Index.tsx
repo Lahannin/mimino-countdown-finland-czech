@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
+import { Shuffle } from "lucide-react";
 import { CountdownHero } from "@/components/CountdownHero";
 import { BabyDevelopmentCard } from "@/components/BabyDevelopmentCard";
 import { DailyBabyCard } from "@/components/DailyBabyCard";
@@ -29,8 +30,10 @@ const Index = () => {
   const [finnishFact, setFinnishFact] = useState(defaultFacts.finnish);
   const [word, setWord] = useState(defaultWord);
 
-  const shuffleCzech = useCallback(() => setCzechFact(getRandomFact("czech")), []);
-  const shuffleFinnish = useCallback(() => setFinnishFact(getRandomFact("finland")), []);
+  const shuffleFacts = useCallback(() => {
+    setCzechFact(getRandomFact("czech"));
+    setFinnishFact(getRandomFact("finland"));
+  }, []);
   const shuffleWord = useCallback(() => setWord(getRandomWord()), []);
 
   const diffMs = DUE_DATE.getTime() - now.getTime();
@@ -106,9 +109,21 @@ const Index = () => {
         <DailyBabyCard dailyInfo={dailyInfo} />
 
         {/* Cultural Facts */}
-        <div className="grid md:grid-cols-2 gap-5">
-          <CulturalFactCard fact={czechFact} label="Daily thought from Czechia" onShuffle={shuffleCzech} />
-          <CulturalFactCard fact={finnishFact} label="Daily thought from Finland" onShuffle={shuffleFinnish} />
+        <div className="space-y-3">
+          <div className="flex items-center justify-between px-1">
+            <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground font-body font-semibold">Daily thoughts</p>
+            <button
+              onClick={shuffleFacts}
+              className="flex items-center gap-1.5 text-[10px] uppercase tracking-[0.15em] text-muted-foreground/50 hover:text-muted-foreground font-body font-medium transition-colors"
+            >
+              <Shuffle className="w-3 h-3" />
+              Shuffle
+            </button>
+          </div>
+          <div className="grid md:grid-cols-2 gap-5">
+            <CulturalFactCard fact={czechFact} label="From Czechia" />
+            <CulturalFactCard fact={finnishFact} label="From Finland" />
+          </div>
         </div>
 
         {/* Bilingual word of the day */}
