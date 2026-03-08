@@ -35,6 +35,16 @@ export function BabyDevelopmentCard({ weekData }: BabyDevelopmentCardProps) {
           <p className="text-xl font-display font-semibold mt-1">{weekData.length}</p>
         </div>
       </div>
+
+      {/* Funny Finnish & Czech comparisons */}
+      <div className="mt-5 space-y-3">
+        <div className="bg-finn/10 rounded-xl px-4 py-3">
+          <p className="font-body text-sm leading-relaxed">{weekData.finnComparison}</p>
+        </div>
+        <div className="bg-czech/10 rounded-xl px-4 py-3">
+          <p className="font-body text-sm leading-relaxed">{weekData.czechComparison}</p>
+        </div>
+      </div>
     </motion.div>
   );
 }
