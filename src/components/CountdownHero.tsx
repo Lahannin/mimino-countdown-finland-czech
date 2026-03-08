@@ -30,7 +30,7 @@ export function CountdownHero({ days, hours, minutes, seconds }: CountdownHeroPr
     >
       {/* Subtle accent */}
       <div
-        className="absolute -top-14 -right-14 w-36 h-36 rounded-full opacity-[0.06] blur-xl pointer-events-none"
+        className="absolute -top-14 -right-14 w-36 h-36 rounded-full opacity-[0.03] blur-2xl pointer-events-none"
         style={{ background: 'hsl(350 72% 55%)' }}
       />
 
