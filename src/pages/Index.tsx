@@ -4,7 +4,7 @@ import { Shuffle } from "lucide-react";
 import { CountdownHero } from "@/components/CountdownHero";
 import { BabyDevelopmentCard } from "@/components/BabyDevelopmentCard";
 import { DailyBabyCard } from "@/components/DailyBabyCard";
-import { CulturalFactCard } from "@/components/CulturalFactCard";
+import { DailyThoughtsCard } from "@/components/DailyThoughtsCard";
 import { BilingualWordCard } from "@/components/BilingualWordCard";
 import { getWeekSummary, getDailyBabyInfo } from "@/data/babyDevelopment";
 import { getDailyFacts, getRandomFact } from "@/data/culturalFacts";
