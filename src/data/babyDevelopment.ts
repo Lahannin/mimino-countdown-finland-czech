@@ -23,10 +23,10 @@ export interface WeekSummary {
 
 const weekSummaries: WeekSummary[] = [
   { week: 28, size: "Eggplant", sizeEmoji: "🍆", sizeComparison: "About as big as an eggplant", sizeCzech: "lilek", sizeFinnish: "munakoiso", weight: "~1.0 kg", length: "~37 cm",
-    finnComparison: "🇫🇮 About as long as a kantele (the small travel-size one isä pretends to play)",
+    finnComparison: "🇫🇮 About as long as a kantele (the small travel-size one isi pretends to play)",
     czechComparison: "🇨🇿 Weighs as much as a big wheel of Olomoucké tvarůžky, and smells better!" },
   { week: 29, size: "Butternut squash", sizeEmoji: "🎃", sizeComparison: "Size of a butternut squash", sizeCzech: "máslová dýně", sizeFinnish: "myskikurpitsa", weight: "~1.1 kg", length: "~38 cm",
-    finnComparison: "🇫🇮 As heavy as 6 bags of Fazer salmiakki. Isä's favorite! 🍬",
+    finnComparison: "🇫🇮 As heavy as 6 bags of Fazer salmiakki. Isi's favorite! 🍬",
     czechComparison: "🇨🇿 About as long as 2.5 Pilsner Urquell cans stacked up. Cheers, mimino! 🍺" },
   { week: 30, size: "Cabbage", sizeEmoji: "🥬", sizeComparison: "About the size of a cabbage", sizeCzech: "zelí", sizeFinnish: "kaali", weight: "~1.3 kg", length: "~39 cm",
     finnComparison: "🇫🇮 As long as a big Finnish grillimakkara, the jumbo kind from the mökki grill! 🌭",
@@ -41,7 +41,7 @@ const weekSummaries: WeekSummary[] = [
     finnComparison: "🇫🇮 As heavy as a sauna löyly bucket (empty, don't worry). Time to warm up!",
     czechComparison: "🇨🇿 As long as a Czech garden gnome. Yes, every babička has one 🧙" },
   { week: 34, size: "Cantaloupe", sizeEmoji: "🍈", sizeComparison: "About as big as a cantaloupe", sizeCzech: "cukrový meloun", sizeFinnish: "cantaloupe-meloni", weight: "~2.1 kg", length: "~44 cm",
-    finnComparison: "🇫🇮 As heavy as 6 packages of Karelian pies. Isä is drooling! 🥟",
+    finnComparison: "🇫🇮 As heavy as 6 packages of Karelian pies. Isi is drooling! 🥟",
     czechComparison: "🇨🇿 Length of 4 koláče lined up. Babička is already baking! 🥧" },
   { week: 35, size: "Honeydew melon", sizeEmoji: "🍈", sizeComparison: "Size of a honeydew melon", sizeCzech: "medový meloun", sizeFinnish: "hunajameloni", weight: "~2.4 kg", length: "~46 cm",
     finnComparison: "🇫🇮 Weighs the same as 12 bars of Fazer Blue chocolate. Nom! 🍫",
@@ -59,7 +59,7 @@ const weekSummaries: WeekSummary[] = [
     finnComparison: "🇫🇮 Half a meter! That's the length of a proper Finnish birch vihta for sauna 🧖",
     czechComparison: "🇨🇿 Weighs as much as 30 Becherovka mini bottles. Na zdraví! 🥃" },
   { week: 40, size: "Pumpkin", sizeEmoji: "🎃", sizeComparison: "Size of a small pumpkin", sizeCzech: "dýně", sizeFinnish: "kurpitsa", weight: "~3.5 kg", length: "~51 cm",
-    finnComparison: "🇫🇮 As heavy as the Finnish maternity box she'll get from isä's homeland! 📦",
+    finnComparison: "🇫🇮 As heavy as the Finnish maternity box she'll get from isi's homeland! 📦",
     czechComparison: "🇨🇿 As long as 4 rohlíky (Czech bread rolls) in a row. Snídaně time! 🥖" },
 ];
 
@@ -103,7 +103,7 @@ const dailyDevelopments: DailyBabyInfo[] = [
   { dayTitle: "Kidney function", sizeEmoji: "💧", funFact: "Her kidneys are fully functional inside and producing urine into the amniotic fluid.", tip: "She pees into the amniotic fluid, and swallows it again! Circle of life." },
   { dayTitle: "Day & night", sizeEmoji: "🌙", funFact: "She's developing a sense of day and night based on maminka's hormones and light.", tip: "Keeping a regular schedule now might help her sleep patterns after birth." },
   { dayTitle: "Liver developing", sizeEmoji: "🫀", funFact: "Her liver is storing iron and getting ready to process bilirubin after birth.", tip: "Slight jaundice is common in newborns, usually resolves on its own." },
-  { dayTitle: "Almost there!", sizeEmoji: "🎉", funFact: "She's nearly full-term, getting ready to meet isä and maminka!", tip: "Make sure the hospital bag is packed, holka can come any time!" },
+  { dayTitle: "Almost there!", sizeEmoji: "🎉", funFact: "She's nearly full-term, getting ready to meet isi and maminka!", tip: "Make sure the hospital bag is packed, holka can come any time!" },
   { dayTitle: "Final countdown", sizeEmoji: "🚀", funFact: "She's in launch position inside! Head down and preparing for the grand entrance.", tip: "Rest when you can, soon sleep will be a luxury!" },
   { dayTitle: "Smooth skin", sizeEmoji: "🛡️", funFact: "The lanugo (fine body hair) is mostly gone, replaced by smooth baby skin underneath the vernix.", tip: "Some lanugo might remain on her shoulders and back at birth." },
   { dayTitle: "Strong heartbeat", sizeEmoji: "❤️", funFact: "Her heart beats about 110-160 times per minute inside the womb, twice as fast as maminka's!", tip: "You can hear it with a stethoscope or doppler at checkups." },

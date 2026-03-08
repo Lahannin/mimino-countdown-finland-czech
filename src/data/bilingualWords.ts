@@ -9,7 +9,7 @@ export interface BilingualWord {
 
 export const bilingualWords: BilingualWord[] = [
   { finnish: "äiti", czech: "maminka", english: "mom", emoji: "👩", pronunciation_fi: "AY-ti", pronunciation_cz: "MA-min-ka" },
-  { finnish: "isä", czech: "tatínek", english: "dad", emoji: "👨", pronunciation_fi: "I-sä", pronunciation_cz: "TA-tee-nek" },
+  { finnish: "isi", czech: "tatínek", english: "dad", emoji: "👨", pronunciation_fi: "I-si", pronunciation_cz: "TA-tee-nek" },
   { finnish: "vauva", czech: "mimino", english: "baby", emoji: "👶", pronunciation_fi: "VAU-va", pronunciation_cz: "MI-mi-no" },
   { finnish: "rakas", czech: "miláček", english: "darling", emoji: "❤️", pronunciation_fi: "RA-kas", pronunciation_cz: "MI-laa-chek" },
   { finnish: "perhe", czech: "rodina", english: "family", emoji: "👨‍👩‍👧", pronunciation_fi: "PER-he", pronunciation_cz: "RO-di-na" },
