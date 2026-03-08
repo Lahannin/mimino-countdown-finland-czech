@@ -12,7 +12,7 @@ export const finnishFacts: CulturalFact[] = [
   { country: "finland", emoji: "📚", fact: "Finnish kids don't start school until age 7, and Finland has one of the best education systems in the world. No rush, mimino!" },
   { country: "finland", emoji: "🧁", fact: "Pulla (Finnish cardamom bread) is often the first pastry Finnish kids learn to bake with mummo. She'll love it!" },
   { country: "finland", emoji: "🎿", fact: "Cross-country skiing is so popular in Finland that babies can start in a pulka (baby sled) before they can stand!" },
-  { country: "finland", emoji: "🫎", fact: "The Finnish word 'sisu' describes inner strength and resilience — a quality she'll inherit from isä!" },
+  { country: "finland", emoji: "🫎", fact: "The Finnish word 'sisu' describes inner strength and resilience, a quality she'll inherit from isä!" },
   { country: "finland", emoji: "🧤", fact: "Finnish grandmothers (mummo) knit the warmest socks and mittens. She'll get plenty from mummo!" },
   { country: "finland", emoji: "🪵", fact: "Summer at a mökki (lakeside cabin) is sacred Finnish family time. Isä will take her there someday!" },
   { country: "finland", emoji: "🎭", fact: "The Moomins were created by Finnish-Swedish author Tove Jansson. Every Finnish kid grows up with Muumit — she will too!" },
