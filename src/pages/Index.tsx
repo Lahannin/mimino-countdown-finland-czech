@@ -29,8 +29,10 @@ const Index = () => {
   const [finnishFact, setFinnishFact] = useState(defaultFacts.finnish);
   const [word, setWord] = useState(defaultWord);
 
-  const shuffleCzech = useCallback(() => setCzechFact(getRandomFact("czech")), []);
-  const shuffleFinnish = useCallback(() => setFinnishFact(getRandomFact("finland")), []);
+  const shuffleFacts = useCallback(() => {
+    setCzechFact(getRandomFact("czech"));
+    setFinnishFact(getRandomFact("finland"));
+  }, []);
   const shuffleWord = useCallback(() => setWord(getRandomWord()), []);
 
   const diffMs = DUE_DATE.getTime() - now.getTime();
