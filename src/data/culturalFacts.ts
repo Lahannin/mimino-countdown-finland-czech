@@ -108,7 +108,7 @@ export const czechFacts: CulturalFact[] = [
   { country: "czech", emoji: "📺", fact: "Večerníček (bedtime story show) airs every night at 7pm on Czech TV. It's been a family ritual since 1965!" },
   { country: "czech", emoji: "🧤", fact: "Czech maminky always pack extra layers. 'Oblékni se!' (dress warmly!) is the most common Czech mom phrase!" },
   { country: "czech", emoji: "🌲", fact: "Czech forests are full of family hiking trails with educational stops for kids. Weekend výlety (trips) are a tradition!" },
-  { country: "czech", emoji: "🎹", fact: "Czech kids often start music lessons young. The country has a deep musical heritage — maybe she'll play piano!" },
+  { country: "czech", emoji: "🎹", fact: "Czech kids often start music lessons young. The country has a deep musical heritage. Maybe she'll play piano!" },
   { country: "czech", emoji: "🥖", fact: "Rohlíky (Czech bread rolls) are a breakfast staple. She'll grow up eating them with butter and jam!" },
   { country: "czech", emoji: "🐞", fact: "Finding a beruška (ladybug) is considered good luck in Czechia. Kids love spotting them in the garden!" },
   { country: "czech", emoji: "🧊", fact: "Czech families love visiting aquaparks together. Baby-friendly pools with warm water are everywhere!" },
