@@ -1,14 +1,12 @@
 import { motion } from "framer-motion";
-import { Shuffle } from "lucide-react";
 import { CulturalFact } from "@/data/culturalFacts";
 
 interface CulturalFactCardProps {
   fact: CulturalFact;
   label: string;
-  onShuffle?: () => void;
 }
 
-export function CulturalFactCard({ fact, label, onShuffle }: CulturalFactCardProps) {
+export function CulturalFactCard({ fact, label }: CulturalFactCardProps) {
   const isFinland = fact.country === "finland";
 
   return (
@@ -24,22 +22,11 @@ export function CulturalFactCard({ fact, label, onShuffle }: CulturalFactCardPro
         border: '1px solid hsl(0 0% 0% / 0.04)',
       }}
     >
-      <div className="flex items-center justify-between mb-3">
-        <div
-          className="w-8 h-8 rounded-lg flex items-center justify-center text-lg"
-          style={{ background: 'hsl(0 0% 0% / 0.03)' }}
-        >
-          {isFinland ? "🇫🇮" : "🇨🇿"}
-        </div>
-        {onShuffle && (
-          <button
-            onClick={onShuffle}
-            className="w-7 h-7 rounded-lg flex items-center justify-center text-muted-foreground/50 hover:text-muted-foreground hover:bg-foreground/[0.04] transition-colors"
-            aria-label="Show another fact"
-          >
-            <Shuffle className="w-3.5 h-3.5" />
-          </button>
-        )}
+      <div
+        className="w-8 h-8 rounded-lg flex items-center justify-center text-lg mb-3"
+        style={{ background: 'hsl(0 0% 0% / 0.03)' }}
+      >
+        {isFinland ? "🇫🇮" : "🇨🇿"}
       </div>
       <h3 className="text-[10px] font-body font-semibold uppercase tracking-[0.2em] text-muted-foreground mb-2">
         {label}
