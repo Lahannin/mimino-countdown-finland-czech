@@ -65,14 +65,14 @@ const Index = () => {
         {/* Daily baby info */}
         <DailyBabyCard dailyInfo={dailyInfo} />
 
-        {/* Bilingual word of the day */}
-        <BilingualWordCard word={dailyWord} />
-
         {/* Cultural Facts */}
         <div className="grid md:grid-cols-2 gap-4">
           <CulturalFactCard fact={finnish} label="Today from Finland" />
           <CulturalFactCard fact={czech} label="Today from Czechia" />
         </div>
+
+        {/* Bilingual word of the day */}
+        <BilingualWordCard word={dailyWord} />
 
         {/* Footer */}
         <motion.div
