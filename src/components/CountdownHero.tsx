@@ -35,7 +35,7 @@ export function CountdownHero({ days, hours, minutes, seconds }: CountdownHeroPr
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
       />
       <motion.div
-        className="absolute -bottom-12 -left-12 w-32 h-32 rounded-full opacity-10 blur-2xl"
+        className="absolute -bottom-10 -left-10 w-28 h-28 rounded-full opacity-10 blur-xl"
         style={{ background: 'hsl(215 60% 50%)' }}
         animate={{ y: [0, 6, 0], x: [0, -4, 0] }}
         transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
