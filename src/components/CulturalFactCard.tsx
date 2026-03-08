@@ -12,9 +12,9 @@ export function CulturalFactCard({ fact, label }: CulturalFactCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: isFinland ? 0.6 : 0.5 }}
-      whileHover={{ y: -3, boxShadow: `0 12px 36px -8px ${isFinland ? 'hsl(215 60% 50% / 0.15)' : 'hsl(355 70% 50% / 0.15)'}` }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-50px" }}
+      transition={{ duration: 0.5, delay: isFinland ? 0.1 : 0 }}
       className="rounded-3xl p-5 md:p-6 shadow-soft relative overflow-hidden"
       style={{
         background: isFinland

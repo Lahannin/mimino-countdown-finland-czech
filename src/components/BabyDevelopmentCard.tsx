@@ -9,9 +9,9 @@ export function BabyDevelopmentCard({ weekData }: BabyDevelopmentCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: 0.4 }}
-      whileHover={{ y: -2, boxShadow: '0 12px 40px -8px hsl(280 50% 62% / 0.25)' }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-50px" }}
+      transition={{ duration: 0.5 }}
       className="rounded-3xl p-6 md:p-8 shadow-soft overflow-hidden relative"
       style={{ background: 'linear-gradient(145deg, hsl(280 50% 62% / 0.12), hsl(0 0% 100% / 0.75), hsl(330 65% 58% / 0.12))', border: '1px solid hsl(280 50% 62% / 0.18)' }}
     >
@@ -58,24 +58,12 @@ export function BabyDevelopmentCard({ weekData }: BabyDevelopmentCardProps) {
       </div>
 
       <div className="mt-4 space-y-2">
-        <motion.div
-          initial={{ opacity: 0, x: -10 }}
-          animate={{ opacity: 1, x: 0 }}
-          whileHover={{ x: 4 }}
-          transition={{ delay: 0.6 }}
-          className="bg-czech/8 rounded-2xl px-4 py-3 border border-czech/10"
-        >
+        <div className="bg-czech/8 rounded-2xl px-4 py-3 border border-czech/10">
           <p className="font-body text-sm leading-relaxed">{weekData.czechComparison}</p>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, x: -10 }}
-          animate={{ opacity: 1, x: 0 }}
-          whileHover={{ x: 4 }}
-          transition={{ delay: 0.7 }}
-          className="bg-finn/8 rounded-2xl px-4 py-3 border border-finn/10"
-        >
+        </div>
+        <div className="bg-finn/8 rounded-2xl px-4 py-3 border border-finn/10">
           <p className="font-body text-sm leading-relaxed">{weekData.finnComparison}</p>
-        </motion.div>
+        </div>
       </div>
     </motion.div>
   );
