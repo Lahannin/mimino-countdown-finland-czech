@@ -25,7 +25,7 @@ export function CulturalFactCard({ fact, label }: CulturalFactCardProps) {
     >
       {/* Accent dot */}
       <motion.div
-        className="absolute top-0 right-0 w-16 h-16 rounded-bl-full opacity-[0.08]"
+        className="absolute -top-6 -right-6 w-24 h-24 rounded-full opacity-[0.12] blur-2xl"
         style={{ background: isFinland ? 'hsl(215 60% 50%)' : 'hsl(355 70% 50%)' }}
         animate={{ scale: [1, 1.15, 1] }}
         transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
