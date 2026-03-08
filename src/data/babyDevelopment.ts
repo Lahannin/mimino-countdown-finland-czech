@@ -25,7 +25,7 @@ const weekSummaries: WeekSummary[] = [
   { week: 28, size: "Eggplant", sizeEmoji: "🍆", sizeComparison: "About as big as an eggplant", sizeCzech: "lilek", sizeFinnish: "munakoiso", weight: "~1.0 kg", length: "~37 cm",
     finnComparison: "🇫🇮 About as long as a kantele (the small travel-size one isä pretends to play)",
     czechComparison: "🇨🇿 Weighs as much as a big wheel of Olomoucké tvarůžky, and smells better!" },
-  { week: 29, size: "Butternut squash", sizeEmoji: "🟠", sizeComparison: "Size of a butternut squash", sizeCzech: "máslová dýně", sizeFinnish: "myskikurpitsa", weight: "~1.1 kg", length: "~38 cm",
+  { week: 29, size: "Butternut squash", sizeEmoji: "🍐", sizeComparison: "Size of a butternut squash", sizeCzech: "máslová dýně", sizeFinnish: "myskikurpitsa", weight: "~1.1 kg", length: "~38 cm",
     finnComparison: "🇫🇮 As heavy as 6 bags of Fazer salmiakki. Isä's favorite! 🍬",
     czechComparison: "🇨🇿 About as long as 2.5 Pilsner Urquell cans stacked up. Cheers, mimino! 🍺" },
   { week: 30, size: "Cabbage", sizeEmoji: "🥬", sizeComparison: "About the size of a cabbage", sizeCzech: "zelí", sizeFinnish: "kaali", weight: "~1.3 kg", length: "~39 cm",
