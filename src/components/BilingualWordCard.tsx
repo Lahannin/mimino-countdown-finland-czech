@@ -18,7 +18,7 @@ export function BilingualWordCard({ word }: BilingualWordCardProps) {
       <div className="flex items-center gap-3 mb-5">
         <div
           className="w-10 h-10 rounded-xl flex items-center justify-center text-2xl"
-          style={{ background: 'linear-gradient(135deg, hsl(280 50% 62% / 0.1), hsl(330 65% 58% / 0.1))' }}
+          style={{ background: 'hsl(0 0% 0% / 0.03)' }}
         >
           {word.emoji}
         </div>
