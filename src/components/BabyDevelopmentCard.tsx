@@ -13,12 +13,12 @@ export function BabyDevelopmentCard({ weekData }: BabyDevelopmentCardProps) {
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5 }}
       className="rounded-3xl p-6 md:p-8 shadow-soft overflow-hidden relative"
-      style={{ background: 'linear-gradient(145deg, hsl(280 50% 62% / 0.12), hsl(0 0% 100% / 0.75), hsl(330 65% 58% / 0.12))', border: '1px solid hsl(280 50% 62% / 0.18)' }}
+      style={{ background: 'hsl(0 0% 100% / 0.6)', backdropFilter: 'blur(16px)', border: '1px solid hsl(0 0% 0% / 0.06)' }}
     >
       <div className="flex items-center gap-4">
         <div
           className="w-14 h-14 md:w-16 md:h-16 rounded-2xl flex items-center justify-center text-4xl md:text-5xl"
-          style={{ background: 'linear-gradient(135deg, hsl(280 50% 62% / 0.1), hsl(330 65% 58% / 0.1))' }}
+          style={{ background: 'hsl(0 0% 0% / 0.03)' }}
         >
           {weekData.sizeEmoji}
         </div>
@@ -37,31 +37,27 @@ export function BabyDevelopmentCard({ weekData }: BabyDevelopmentCardProps) {
       </div>
 
       <div className="mt-5 grid grid-cols-2 gap-3">
-        <motion.div
+        <div
           className="rounded-2xl p-4 text-center"
-          style={{ background: 'hsl(330 65% 58% / 0.08)' }}
-          whileHover={{ scale: 1.03, background: 'hsl(330 65% 58% / 0.14)' }}
-          transition={{ type: "spring", stiffness: 400 }}
+          style={{ background: 'hsl(0 0% 0% / 0.03)' }}
         >
           <p className="text-[10px] text-muted-foreground uppercase tracking-[0.15em] font-body font-medium">Weight</p>
           <p className="text-2xl font-display font-bold mt-1">{weekData.weight}</p>
-        </motion.div>
-        <motion.div
+        </div>
+        <div
           className="rounded-2xl p-4 text-center"
-          style={{ background: 'hsl(280 50% 62% / 0.08)' }}
-          whileHover={{ scale: 1.03, background: 'hsl(280 50% 62% / 0.14)' }}
-          transition={{ type: "spring", stiffness: 400 }}
+          style={{ background: 'hsl(0 0% 0% / 0.03)' }}
         >
           <p className="text-[10px] text-muted-foreground uppercase tracking-[0.15em] font-body font-medium">Length</p>
           <p className="text-2xl font-display font-bold mt-1">{weekData.length}</p>
-        </motion.div>
+        </div>
       </div>
 
       <div className="mt-4 space-y-2">
-        <div className="bg-czech/8 rounded-2xl px-4 py-3 border border-czech/10">
+        <div className="rounded-2xl px-4 py-3 border border-border/50" style={{ background: 'hsl(0 0% 0% / 0.02)' }}>
           <p className="font-body text-sm leading-relaxed">{weekData.czechComparison}</p>
         </div>
-        <div className="bg-finn/8 rounded-2xl px-4 py-3 border border-finn/10">
+        <div className="rounded-2xl px-4 py-3 border border-border/50" style={{ background: 'hsl(0 0% 0% / 0.02)' }}>
           <p className="font-body text-sm leading-relaxed">{weekData.finnComparison}</p>
         </div>
       </div>

@@ -42,8 +42,8 @@ const Index = () => {
           className="text-center relative px-6 pt-4 pb-14 md:pt-6 md:pb-20"
         >
           {/* Subtle background blob */}
-          <motion.div
-            className="absolute -top-16 -left-16 w-48 h-48 rounded-full opacity-10 pointer-events-none blur-2xl"
+          <div
+            className="absolute -top-16 -left-16 w-48 h-48 rounded-full opacity-[0.04] pointer-events-none blur-3xl"
             style={{ background: 'hsl(350 72% 55%)' }}
           />
 
@@ -69,8 +69,8 @@ const Index = () => {
                   backgroundSize: '200% 100%',
                   textShadow: 'none',
                 }}
-                animate={{ backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'], scale: [1, 1.03, 1] }}
-                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+                animate={{ backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'] }}
+                transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
               >
                 mimino
               </motion.span>

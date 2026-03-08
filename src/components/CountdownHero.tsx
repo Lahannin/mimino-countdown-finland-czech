@@ -21,16 +21,16 @@ export function CountdownHero({ days, hours, minutes, seconds }: CountdownHeroPr
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5 }}
-      className="rounded-3xl p-8 md:p-12 text-center shadow-elevated overflow-hidden relative"
+      className="rounded-3xl p-8 md:p-12 text-center shadow-soft overflow-hidden relative"
       style={{
-        background: 'linear-gradient(135deg, hsl(350 72% 55% / 0.08), hsl(0 0% 100% / 0.85), hsl(215 60% 50% / 0.06))',
-        backdropFilter: 'blur(20px)',
-        border: '1px solid hsl(350 72% 55% / 0.12)',
+        background: 'hsl(0 0% 100% / 0.6)',
+        backdropFilter: 'blur(16px)',
+        border: '1px solid hsl(0 0% 0% / 0.06)',
       }}
     >
       {/* Subtle accent */}
       <div
-        className="absolute -top-14 -right-14 w-36 h-36 rounded-full opacity-[0.06] blur-xl pointer-events-none"
+        className="absolute -top-14 -right-14 w-36 h-36 rounded-full opacity-[0.03] blur-2xl pointer-events-none"
         style={{ background: 'hsl(350 72% 55%)' }}
       />
 
@@ -50,9 +50,9 @@ export function CountdownHero({ days, hours, minutes, seconds }: CountdownHeroPr
             <div
               className="rounded-2xl w-16 h-20 md:w-24 md:h-28 flex items-center justify-center"
               style={{
-                background: 'hsl(0 0% 100% / 0.6)',
-                border: '1px solid hsl(350 72% 55% / 0.1)',
-                boxShadow: '0 4px 16px hsl(350 72% 55% / 0.08)',
+                background: 'hsl(0 0% 100% / 0.5)',
+                border: '1px solid hsl(0 0% 0% / 0.05)',
+                boxShadow: '0 2px 8px hsl(0 0% 0% / 0.04)',
               }}
             >
               <span
