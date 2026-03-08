@@ -27,7 +27,7 @@ export function BilingualWordCard({ word, onShuffle }: BilingualWordCardProps) {
           </div>
           <div>
             <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground font-body font-medium">Word of the day</p>
-            <p className="text-sm font-body text-muted-foreground">{word.english}</p>
+            <p className="text-sm font-body font-semibold text-gradient">{word.english}</p>
           </div>
         </div>
         {onShuffle && (
