@@ -49,7 +49,7 @@ export const czechFacts: CulturalFact[] = [
   { country: "czech", emoji: "🏊", fact: "Czech kids learn to swim early, with aquaparks and outdoor swimming spots everywhere. She'll be a little water baby!" },
   { country: "czech", emoji: "🧁", fact: "Trdelník (chimney cake) is a beloved Czech treat. Warm, sweet, and impossible for little hands to resist!" },
   { country: "czech", emoji: "🏔️", fact: "Czech mountains (Krkonoše, Šumava) are perfect for family hikes. Krakonoš the mountain spirit watches over kids!" },
-  { country: "czech", emoji: "🐝", fact: "Ferda Mravenec (Ferda the Ant) is a classic Czech cartoon — hardworking and clever, a great role model for her!" },
+  { country: "czech", emoji: "🐝", fact: "Ferda Mravenec (Ferda the Ant) is a classic Czech cartoon, hardworking and clever. A great role model for her!" },
   { country: "czech", emoji: "🍲", fact: "Svíčková na smetaně is the Czech national dish. She'll grow up eating it at babička's house every Sunday!" },
   { country: "czech", emoji: "🚂", fact: "Czech kids love vlačky (train sets)! The country has one of the densest railway networks in Europe." },
   { country: "czech", emoji: "🎪", fact: "Prague Zoo is consistently ranked among the best in the world. She'll visit it countless times growing up!" },
