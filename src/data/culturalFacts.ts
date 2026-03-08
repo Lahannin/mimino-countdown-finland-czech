@@ -126,7 +126,7 @@ export const czechFacts: CulturalFact[] = [
   { country: "czech", emoji: "🧺", fact: "Czech families love picking mushrooms (houby) in autumn forests. It's a national obsession and family tradition!" },
   { country: "czech", emoji: "🏊", fact: "Czech přehrady (reservoirs) become family beaches in summer. Kids splash, parents relax. Summer perfection!" },
   { country: "czech", emoji: "📮", fact: "Czech kids write letters to Ježíšek before Christmas. She'll carefully list her wishes every December!" },
-  { country: "czech", emoji: "🧁", fact: "Medovník (honey cake) is a Czech celebration classic. Layers of honey, cream, and love — babička's specialty!" },
+  { country: "czech", emoji: "🧁", fact: "Medovník (honey cake) is a Czech celebration classic. Layers of honey, cream, and love. Babička's specialty!" },
 ];
 
 export function getDailyFacts(currentDate: Date): { finnish: CulturalFact; czech: CulturalFact } {
