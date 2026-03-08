@@ -21,7 +21,7 @@ export function DailyBabyCard({ dailyInfo }: DailyBabyCardProps) {
         </div>
         <div>
           <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground font-body font-medium">Today's update</p>
-          <h3 className="text-lg font-display font-semibold">{dailyInfo.dayTitle}</h3>
+          <h3 className="text-lg font-display font-semibold text-gradient">{dailyInfo.dayTitle}</h3>
         </div>
       </div>
       <p className="font-body text-foreground/90 leading-relaxed text-[15px]">

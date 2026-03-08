@@ -47,7 +47,7 @@ export function BilingualWordCard({ word }: BilingualWordCardProps) {
           style={{ background: 'hsl(0 0% 0% / 0.02)' }}
         >
           <p className="text-[10px] uppercase tracking-[0.15em] text-muted-foreground font-body font-medium mb-1">🇫🇮 Suomi</p>
-          <p className="text-xl md:text-2xl font-display font-bold">{word.finnish}</p>
+          <p className="text-xl md:text-2xl font-display font-bold text-gradient">{word.finnish}</p>
           {word.pronunciation_fi && (
             <p className="text-xs text-muted-foreground font-body mt-1 italic">/{word.pronunciation_fi}/</p>
           )}
