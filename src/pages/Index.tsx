@@ -96,11 +96,8 @@ const Index = () => {
         {/* Countdown */}
         <CountdownHero days={totalDays} hours={hours} minutes={minutes} seconds={seconds} />
 
-        {/* Weekly size summary */}
-        <BabyDevelopmentCard weekData={weekData} />
-
-        {/* Daily baby info */}
-        <DailyBabyCard dailyInfo={dailyInfo} />
+        {/* Weekly + daily combined */}
+        <BabyDevelopmentCard weekData={weekData} dailyInfo={dailyInfo} />
 
         {/* Cultural Facts */}
         <div className="grid md:grid-cols-2 gap-4">
