@@ -69,7 +69,7 @@ const Index = () => {
                   backgroundSize: '200% 100%',
                   textShadow: 'none',
                 }}
-                animate={{ backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'], scale: [1, 1.03, 1] }}
+                animate={{ backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'] }}
                 transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
               >
                 mimino
