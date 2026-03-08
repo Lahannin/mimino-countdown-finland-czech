@@ -43,7 +43,7 @@ export function BabyDevelopmentCard({ weekData }: BabyDevelopmentCardProps) {
         >
           <p className="text-[10px] text-muted-foreground uppercase tracking-[0.15em] font-body font-medium">Weight</p>
           <p className="text-2xl font-display font-bold mt-1">{weekData.weight}</p>
-        </motion.div>
+        </div>
         <motion.div
           className="rounded-2xl p-4 text-center"
           style={{ background: 'hsl(280 50% 62% / 0.08)' }}
