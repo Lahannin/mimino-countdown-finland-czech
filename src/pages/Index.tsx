@@ -124,7 +124,13 @@ const Index = () => {
             </h1>
 
             <motion.p
-              className="mt-4 text-xl md:text-3xl font-display font-semibold text-primary"
+              className="mt-4 text-xl md:text-3xl font-display font-semibold"
+              style={{
+                backgroundImage: 'linear-gradient(90deg, hsl(340 75% 55%), hsl(320 65% 58%), hsl(290 55% 60%), hsl(260 50% 62%), hsl(340 75% 55%))',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+              }}
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.6 }}
