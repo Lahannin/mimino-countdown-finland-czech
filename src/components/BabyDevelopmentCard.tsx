@@ -44,11 +44,9 @@ export function BabyDevelopmentCard({ weekData }: BabyDevelopmentCardProps) {
           <p className="text-[10px] text-muted-foreground uppercase tracking-[0.15em] font-body font-medium">Weight</p>
           <p className="text-2xl font-display font-bold mt-1">{weekData.weight}</p>
         </div>
-        <motion.div
+        <div
           className="rounded-2xl p-4 text-center"
-          style={{ background: 'hsl(280 50% 62% / 0.08)' }}
-          whileHover={{ scale: 1.03, background: 'hsl(280 50% 62% / 0.14)' }}
-          transition={{ type: "spring", stiffness: 400 }}
+          style={{ background: 'hsl(0 0% 0% / 0.03)' }}
         >
           <p className="text-[10px] text-muted-foreground uppercase tracking-[0.15em] font-body font-medium">Length</p>
           <p className="text-2xl font-display font-bold mt-1">{weekData.length}</p>
