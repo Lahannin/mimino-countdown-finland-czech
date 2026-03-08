@@ -41,9 +41,10 @@ export function CountdownHero({ days, hours, minutes, seconds }: CountdownHeroPr
         {units.map((unit, i) => (
           <motion.div
             key={unit.label}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 + i * 0.1 }}
+            initial={{ opacity: 0, y: 12 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: i * 0.08 }}
             className="flex flex-col items-center"
           >
             <div

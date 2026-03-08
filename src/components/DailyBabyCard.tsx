@@ -32,7 +32,7 @@ export function DailyBabyCard({ dailyInfo }: DailyBabyCardProps) {
         <p className="text-sm font-body text-muted-foreground">
           💡 <span className="font-semibold text-foreground">Tip:</span> {dailyInfo.tip}
         </p>
-      </motion.div>
+      </div>
     </motion.div>
   );
 }

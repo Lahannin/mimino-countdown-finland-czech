@@ -67,7 +67,7 @@ export function BabyDevelopmentCard({ weekData }: BabyDevelopmentCardProps) {
           className="bg-finn/8 rounded-2xl px-4 py-3 border border-finn/10"
         >
           <p className="font-body text-sm leading-relaxed">{weekData.finnComparison}</p>
-        </motion.div>
+        </div>
       </div>
     </motion.div>
   );
