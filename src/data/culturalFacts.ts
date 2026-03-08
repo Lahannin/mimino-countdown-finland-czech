@@ -51,6 +51,20 @@ export const finnishFacts: CulturalFact[] = [
   { country: "finland", emoji: "🏔️", fact: "Fell Lapland has magical fells (tunturi) that look like they're from a fairy tale. Perfect for family adventures!" },
   { country: "finland", emoji: "🦊", fact: "The Finnish word for northern lights, 'revontulet', literally means 'fox fires'. What a story for her!" },
   { country: "finland", emoji: "🧣", fact: "Finnish wool (villalanka) is famously warm. Her first winter outfit will probably be hand-knitted by family!" },
+  { country: "finland", emoji: "🎪", fact: "Finnish children's festivals like Lastenliiton päivä bring families together with games, music, and crafts!" },
+  { country: "finland", emoji: "🦆", fact: "Finnish kids learn to recognize birds early. Watching ducks at the lake is a beloved family activity!" },
+  { country: "finland", emoji: "🧃", fact: "Mustikkakeitto (blueberry soup) is a classic Finnish kids' drink, served warm or cold. She'll love it!" },
+  { country: "finland", emoji: "🎿", fact: "Finnish kids get 'hiihtoloma' (ski holiday) every February. A whole week of snow fun with the family!" },
+  { country: "finland", emoji: "🪵", fact: "Building with wooden blocks (palikat) is a Finnish kindergarten staple. Nordic design starts early!" },
+  { country: "finland", emoji: "🌊", fact: "Finnish lakes are so clean babies can splash in them. Summer days by the järvi are pure magic!" },
+  { country: "finland", emoji: "🧇", fact: "Laskiaispulla (Shrove buns) filled with cream are a Finnish winter treat. She'll get her first taste soon!" },
+  { country: "finland", emoji: "🐿️", fact: "Finnish kids love watching orava (squirrels) in parks. They're like little forest friends!" },
+  { country: "finland", emoji: "🎸", fact: "Finland has more heavy metal bands per capita than anywhere, but Finnish kids' music (lastenmusiikki) is wonderfully gentle!" },
+  { country: "finland", emoji: "🏕️", fact: "Family camping (leirintä) in Finnish nature is a summer tradition. Her first camping trip will be unforgettable!" },
+  { country: "finland", emoji: "🫗", fact: "Kiisseli (berry pudding) is a beloved Finnish baby food. Sweet, natural, and full of vitamins!" },
+  { country: "finland", emoji: "🌾", fact: "Finnish Midsummer (Juhannus) is celebrated with bonfires by the lake. The most magical family night of the year!" },
+  { country: "finland", emoji: "🐰", fact: "The Easter bunny in Finland is pääsiäispupu. Finnish kids hunt for chocolate eggs in the garden!" },
+  { country: "finland", emoji: "🎿", fact: "Finnish babies ride in a ahkio (Lappish sled) pulled by parents through snowy forests. So cozy!" },
 ];
 
 export const czechFacts: CulturalFact[] = [
