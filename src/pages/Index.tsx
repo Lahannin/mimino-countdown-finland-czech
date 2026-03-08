@@ -116,7 +116,7 @@ const Index = () => {
           >
             <span className="text-xs text-muted-foreground font-body">
               22. května 2026 ·{" "}
-              <motion.span className="inline-block" {...floatingHeart}>🇨🇿</motion.span>
+              <motion.span className="inline-block" animate={floatingAnim} transition={floatingTransition}>🇨🇿</motion.span>
               {" "}Maminka{" "}
               <motion.span
                 className="inline-block"
