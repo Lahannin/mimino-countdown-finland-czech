@@ -40,14 +40,6 @@ const Index = () => {
           transition={{ duration: 0.8 }}
           className="text-center pb-2"
         >
-          <motion.div
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ type: "spring", delay: 0.2, duration: 0.8 }}
-            className="text-5xl mb-4"
-          >
-            👶
-          </motion.div>
           <h1 className="text-4xl md:text-6xl font-display tracking-tight leading-tight">
             Ahoj, <span className="italic text-primary">mimino</span>
           </h1>
