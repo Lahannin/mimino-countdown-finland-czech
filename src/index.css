@@ -44,17 +44,17 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
 
     /* Custom tokens */
-    --finn-blue: 215 50% 55%;
-    --czech-red: 355 60% 52%;
-    --sage: 165 30% 60%;
-    --peach: 15 75% 88%;
+    --finn-blue: 215 60% 50%;
+    --czech-red: 355 70% 50%;
+    --sage: 165 35% 55%;
+    --peach: 15 80% 85%;
     --cream: 40 50% 96%;
-    --glass: 0 0% 100% / 0.7;
-    --glass-border: 0 0% 100% / 0.3;
-    --shadow-soft: 0 8px 32px -8px hsl(230 25% 14% / 0.08);
-    --shadow-lg: 0 16px 48px -12px hsl(230 25% 14% / 0.12);
-    --gradient-warm: linear-gradient(135deg, hsl(15 75% 88% / 0.4), hsl(350 65% 58% / 0.08));
-    --gradient-page: linear-gradient(180deg, hsl(240 20% 97%) 0%, hsl(15 40% 96%) 50%, hsl(220 25% 96%) 100%);
+    --glass: 0 0% 100% / 0.75;
+    --glass-border: 0 0% 100% / 0.4;
+    --shadow-soft: 0 8px 32px -8px hsl(230 25% 14% / 0.1);
+    --shadow-lg: 0 16px 48px -12px hsl(350 72% 55% / 0.15);
+    --gradient-warm: linear-gradient(135deg, hsl(350 72% 55% / 0.12), hsl(15 80% 85% / 0.5));
+    --gradient-page: linear-gradient(180deg, hsl(350 72% 55% / 0.04) 0%, hsl(15 50% 96%) 30%, hsl(220 30% 96%) 70%, hsl(350 72% 55% / 0.06) 100%);
 
     font-family: 'DM Sans', sans-serif;
   }
