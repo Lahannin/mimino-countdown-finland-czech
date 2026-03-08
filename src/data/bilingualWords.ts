@@ -94,3 +94,7 @@ export function getDailyWord(currentDate: Date): BilingualWord {
   );
   return bilingualWords[dayOfYear % bilingualWords.length];
 }
+
+export function getRandomWord(): BilingualWord {
+  return bilingualWords[Math.floor(Math.random() * bilingualWords.length)];
+}

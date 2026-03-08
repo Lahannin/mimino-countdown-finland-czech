@@ -139,3 +139,8 @@ export function getDailyFacts(currentDate: Date): { finnish: CulturalFact; czech
     czech: czechFacts[dayOfYear % czechFacts.length],
   };
 }
+
+export function getRandomFact(country: "finland" | "czech"): CulturalFact {
+  const pool = country === "finland" ? finnishFacts : czechFacts;
+  return pool[Math.floor(Math.random() * pool.length)];
+}
