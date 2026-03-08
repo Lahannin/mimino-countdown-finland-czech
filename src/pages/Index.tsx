@@ -12,16 +12,15 @@ import type { Transition } from "framer-motion";
 
 const DUE_DATE = new Date(2026, 4, 22); // May 22, 2026
 
-const floatingHeart: { animate: object; transition: Transition } = {
-  animate: {
-    y: [0, -6, 0],
-    rotate: [0, 5, -5, 0],
-  },
-  transition: {
-    duration: 4,
-    repeat: Infinity,
-    ease: "easeInOut" as const,
-  },
+const floatingAnim = {
+  y: [0, -6, 0] as number[],
+  rotate: [0, 5, -5, 0] as number[],
+};
+
+const floatingTransition = {
+  duration: 4,
+  repeat: Infinity,
+  ease: "easeInOut" as const,
 };
 
 const Index = () => {
