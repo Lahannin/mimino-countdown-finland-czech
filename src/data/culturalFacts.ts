@@ -42,7 +42,7 @@ export const finnishFacts: CulturalFact[] = [
   { country: "finland", emoji: "🧤", fact: "Finnish kids play outside in all weather. The saying goes: 'There's no bad weather, only bad clothes!'" },
   { country: "finland", emoji: "🪺", fact: "Finnish parents often choose nature-inspired names. The forest and lakes are deeply woven into naming traditions." },
   { country: "finland", emoji: "🫧", fact: "Baby swimming (vauvauinti) is hugely popular in Finland. Many babies start as young as 3 months!" },
-  { country: "finland", emoji: "🎨", fact: "Finnish design extends to baby gear — Marimekko and Reima make some of the most beautiful kids' clothes in the world!" },
+  { country: "finland", emoji: "🎨", fact: "Finnish design extends to baby gear. Marimekko and Reima make some of the most beautiful kids' clothes in the world!" },
   { country: "finland", emoji: "🌛", fact: "Finnish bedtime stories often feature the forest and its creatures. Metsän tarina (tales of the forest) are magical." },
   { country: "finland", emoji: "🫶", fact: "In Finland, both parents get generous parental leave. Isi will have plenty of time to bond with her!" },
   { country: "finland", emoji: "🧸", fact: "Every Finnish child has a unilelu (sleep toy). Finding THE one is a serious family mission!" },
