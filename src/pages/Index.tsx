@@ -82,8 +82,8 @@ const Index = () => {
           <p className="mt-4 text-muted-foreground text-base md:text-lg font-body">
             🇨🇿 Czech maminka & 🇫🇮 Finnish isä
           </p>
-          <p className="mt-1 text-muted-foreground text-base md:text-lg font-body">
-            Our holka is on the way!
+          <p className="mt-2 text-lg md:text-2xl font-display font-semibold bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">
+            Our holka is on the way! ✨
           </p>
         </motion.div>
 
