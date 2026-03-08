@@ -13,7 +13,7 @@ export function DailyBabyCard({ dailyInfo }: DailyBabyCardProps) {
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5 }}
       className="rounded-3xl p-6 md:p-7 shadow-soft overflow-hidden relative"
-      style={{ background: 'linear-gradient(145deg, hsl(350 72% 55% / 0.03), hsl(0 0% 100% / 0.7), hsl(15 80% 85% / 0.08))', backdropFilter: 'blur(16px)', border: '1px solid hsl(0 0% 0% / 0.06)' }}
+      style={{ background: 'hsl(0 0% 100% / 0.65)', backdropFilter: 'blur(16px)', border: '1px solid hsl(0 0% 100% / 0.8)' }}
     >
       <div className="flex items-center gap-3 mb-3">
         <div className="w-10 h-10 rounded-xl bg-card/80 flex items-center justify-center text-2xl shadow-sm">

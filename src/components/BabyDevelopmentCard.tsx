@@ -13,7 +13,7 @@ export function BabyDevelopmentCard({ weekData }: BabyDevelopmentCardProps) {
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5 }}
       className="rounded-3xl p-6 md:p-8 shadow-soft overflow-hidden relative"
-      style={{ background: 'linear-gradient(145deg, hsl(280 50% 62% / 0.04), hsl(0 0% 100% / 0.7), hsl(330 65% 58% / 0.03))', backdropFilter: 'blur(16px)', border: '1px solid hsl(0 0% 0% / 0.06)' }}
+      style={{ background: 'hsl(0 0% 100% / 0.65)', backdropFilter: 'blur(16px)', border: '1px solid hsl(0 0% 100% / 0.8)' }}
     >
       <div className="flex items-center gap-4">
         <div
