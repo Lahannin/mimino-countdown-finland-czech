@@ -4,8 +4,10 @@ import { CountdownHero } from "@/components/CountdownHero";
 import { BabyDevelopmentCard } from "@/components/BabyDevelopmentCard";
 import { DailyBabyCard } from "@/components/DailyBabyCard";
 import { CulturalFactCard } from "@/components/CulturalFactCard";
+import { BilingualWordCard } from "@/components/BilingualWordCard";
 import { getWeekSummary, getDailyBabyInfo } from "@/data/babyDevelopment";
 import { getDailyFacts } from "@/data/culturalFacts";
+import { getDailyWord } from "@/data/bilingualWords";
 
 const DUE_DATE = new Date(2026, 4, 22); // May 22, 2026
 
@@ -20,6 +22,7 @@ const Index = () => {
   const weekData = getWeekSummary(DUE_DATE, now);
   const dailyInfo = getDailyBabyInfo(now);
   const { finnish, czech } = getDailyFacts(now);
+  const dailyWord = getDailyWord(now);
 
   const diffMs = DUE_DATE.getTime() - now.getTime();
   const totalDays = Math.max(0, Math.ceil(diffMs / (1000 * 60 * 60 * 24)));
@@ -61,6 +64,9 @@ const Index = () => {
 
         {/* Daily baby info */}
         <DailyBabyCard dailyInfo={dailyInfo} />
+
+        {/* Bilingual word of the day */}
+        <BilingualWordCard word={dailyWord} />
 
         {/* Cultural Facts */}
         <div className="grid md:grid-cols-2 gap-4">
