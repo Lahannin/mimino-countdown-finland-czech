@@ -82,6 +82,18 @@ export const bilingualWords: BilingualWord[] = [
   { finnish: "ihme", czech: "zázrak", english: "miracle", emoji: "🌟", pronunciation_fi: "IH-me", pronunciation_cz: "ZAA-zrak" },
   { finnish: "lupaus", czech: "slib", english: "promise", emoji: "🤞", pronunciation_fi: "LU-pa-us", pronunciation_cz: "slib" },
   { finnish: "ikuisesti", czech: "navždy", english: "forever", emoji: "♾️", pronunciation_fi: "I-ku-i-ses-ti", pronunciation_cz: "NAV-zhdi" },
+
+  // More love & family
+  { finnish: "aamu", czech: "ráno", english: "morning", emoji: "🌤️", pronunciation_fi: "AA-mu", pronunciation_cz: "RAA-no" },
+  { finnish: "ilta", czech: "večer", english: "evening", emoji: "🌆", pronunciation_fi: "IL-ta", pronunciation_cz: "VE-cher" },
+  { finnish: "rakkaus", czech: "láska", english: "love", emoji: "💖", pronunciation_fi: "RAK-ka-us", pronunciation_cz: "LAAS-ka" },
+  { finnish: "vanhemmat", czech: "rodiče", english: "parents", emoji: "👫", pronunciation_fi: "VAN-hem-mat", pronunciation_cz: "RO-di-che" },
+  { finnish: "ilo", czech: "radost", english: "joy", emoji: "🎉", pronunciation_fi: "I-lo", pronunciation_cz: "RA-dost" },
+  { finnish: "suojelija", czech: "ochránce", english: "protector", emoji: "🛡️", pronunciation_fi: "SUO-ye-li-ya", pronunciation_cz: "O-khraan-tse" },
+  { finnish: "ääni", czech: "hlásek", english: "little voice", emoji: "🗣️", pronunciation_fi: "ÄÄ-ni", pronunciation_cz: "HLAA-sek" },
+  { finnish: "silmät", czech: "očička", english: "little eyes", emoji: "👀", pronunciation_fi: "SIL-mät", pronunciation_cz: "O-chich-ka" },
+  { finnish: "kiitollinen", czech: "vděčný", english: "grateful", emoji: "🙏", pronunciation_fi: "KEE-tol-li-nen", pronunciation_cz: "VDYECH-nee" },
+  { finnish: "yhdessä", czech: "spolu", english: "together", emoji: "🤝", pronunciation_fi: "ÜH-des-sä", pronunciation_cz: "SPO-lu" },
 ];
 
 export function getDailyWord(currentDate: Date): BilingualWord {

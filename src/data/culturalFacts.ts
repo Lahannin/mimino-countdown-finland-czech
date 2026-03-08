@@ -132,6 +132,11 @@ export const czechFacts: CulturalFact[] = [
   { country: "czech", emoji: "🏊", fact: "Czech přehrady (reservoirs) become family beaches in summer. Kids splash, parents relax. Summer perfection!" },
   { country: "czech", emoji: "📮", fact: "Czech kids write letters to Ježíšek before Christmas. She'll carefully list her wishes every December!" },
   { country: "czech", emoji: "🧁", fact: "Medovník (honey cake) is a Czech celebration classic. Layers of honey, cream, and love. Babička's specialty!" },
+  { country: "czech", emoji: "💌", fact: "Czech parents often keep a 'deníček' (little diary) for their baby, writing memories from pregnancy onwards." },
+  { country: "czech", emoji: "🧑‍🍼", fact: "Czech tatínkové are increasingly hands-on. More and more Czech dads take paternity leave to bond with their newborns!" },
+  { country: "czech", emoji: "🎀", fact: "When a Czech baby girl is born, it's tradition to hang a pink ribbon on the front door to share the news!" },
+  { country: "czech", emoji: "🍀", fact: "Czech families often give a four-leaf clover charm to a newborn for luck. She'll be surrounded by good wishes!" },
+  { country: "czech", emoji: "👣", fact: "Many Czech families make an otisk (footprint) of baby's tiny feet right after birth. A treasured keepsake forever!" },
 ];
 
 export function getDailyFacts(currentDate: Date): { finnish: CulturalFact; czech: CulturalFact } {
