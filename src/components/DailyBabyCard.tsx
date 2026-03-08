@@ -11,16 +11,21 @@ export function DailyBabyCard({ dailyInfo }: DailyBabyCardProps) {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 0.5 }}
-      className="bg-peach/30 rounded-2xl p-5 md:p-6 border border-border shadow-sm"
+      className="gradient-warm rounded-3xl p-6 md:p-7 shadow-soft border border-primary/5"
     >
       <div className="flex items-center gap-3 mb-3">
-        <span className="text-3xl">{dailyInfo.sizeEmoji}</span>
-        <h3 className="text-xl font-display font-semibold">{dailyInfo.dayTitle}</h3>
+        <div className="w-10 h-10 rounded-xl bg-card/80 flex items-center justify-center text-2xl shadow-sm">
+          {dailyInfo.sizeEmoji}
+        </div>
+        <div>
+          <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground font-body font-medium">Today's update</p>
+          <h3 className="text-lg font-display font-semibold">{dailyInfo.dayTitle}</h3>
+        </div>
       </div>
-      <p className="font-body text-foreground leading-relaxed">
+      <p className="font-body text-foreground/90 leading-relaxed text-[15px]">
         {dailyInfo.funFact}
       </p>
-      <div className="mt-3 bg-background/60 rounded-xl px-4 py-3">
+      <div className="mt-4 bg-card/60 backdrop-blur-sm rounded-2xl px-4 py-3 border border-border/50">
         <p className="text-sm font-body text-muted-foreground">
           <span className="font-semibold text-foreground">💡 Tip:</span> {dailyInfo.tip}
         </p>
