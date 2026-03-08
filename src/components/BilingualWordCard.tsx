@@ -24,21 +24,21 @@ export function BilingualWordCard({ word }: BilingualWordCardProps) {
       </div>
 
       <div className="grid grid-cols-2 gap-3">
-        {/* Finnish */}
-        <div className="bg-finn/8 rounded-2xl p-4 border border-finn/10 text-center">
-          <p className="text-[10px] uppercase tracking-[0.15em] text-muted-foreground font-body font-medium mb-1">🇫🇮 Suomi</p>
-          <p className="text-xl md:text-2xl font-display font-bold">{word.finnish}</p>
-          {word.pronunciation_fi && (
-            <p className="text-xs text-muted-foreground font-body mt-1 italic">/{word.pronunciation_fi}/</p>
-          )}
-        </div>
-
         {/* Czech */}
         <div className="bg-czech/8 rounded-2xl p-4 border border-czech/10 text-center">
           <p className="text-[10px] uppercase tracking-[0.15em] text-muted-foreground font-body font-medium mb-1">🇨🇿 Čeština</p>
           <p className="text-xl md:text-2xl font-display font-bold">{word.czech}</p>
           {word.pronunciation_cz && (
             <p className="text-xs text-muted-foreground font-body mt-1 italic">/{word.pronunciation_cz}/</p>
+          )}
+        </div>
+
+        {/* Finnish */}
+        <div className="bg-finn/8 rounded-2xl p-4 border border-finn/10 text-center">
+          <p className="text-[10px] uppercase tracking-[0.15em] text-muted-foreground font-body font-medium mb-1">🇫🇮 Suomi</p>
+          <p className="text-xl md:text-2xl font-display font-bold">{word.finnish}</p>
+          {word.pronunciation_fi && (
+            <p className="text-xs text-muted-foreground font-body mt-1 italic">/{word.pronunciation_fi}/</p>
           )}
         </div>
       </div>
