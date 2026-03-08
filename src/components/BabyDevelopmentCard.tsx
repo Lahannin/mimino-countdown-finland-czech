@@ -62,7 +62,7 @@ export function BabyDevelopmentCard({ weekData }: BabyDevelopmentCardProps) {
           className="bg-czech/8 rounded-2xl px-4 py-3 border border-czech/10"
         >
           <p className="font-body text-sm leading-relaxed">{weekData.czechComparison}</p>
-        </motion.div>
+        </div>
         <motion.div
           initial={{ opacity: 0, x: -10 }}
           animate={{ opacity: 1, x: 0 }}
