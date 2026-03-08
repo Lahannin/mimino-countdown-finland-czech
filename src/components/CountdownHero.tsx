@@ -23,16 +23,11 @@ export function CountdownHero({ days, hours, minutes, seconds }: CountdownHeroPr
       transition={{ duration: 0.5 }}
       className="rounded-3xl p-8 md:p-12 text-center shadow-soft overflow-hidden relative"
       style={{
-        background: 'linear-gradient(145deg, hsl(350 72% 55% / 0.03), hsl(0 0% 100% / 0.7), hsl(215 60% 50% / 0.02))',
+        background: 'hsl(0 0% 100% / 0.55)',
         backdropFilter: 'blur(16px)',
-        border: '1px solid hsl(0 0% 0% / 0.06)',
+        border: '1px solid hsl(0 0% 0% / 0.04)',
       }}
     >
-      {/* Subtle accent */}
-      <div
-        className="absolute -top-14 -right-14 w-36 h-36 rounded-full opacity-[0.03] blur-2xl pointer-events-none"
-        style={{ background: 'hsl(350 72% 55%)' }}
-      />
 
       <p className="text-muted-foreground font-body text-xs uppercase tracking-[0.2em] mb-6 relative z-10">
         Countdown to meeting her

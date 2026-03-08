@@ -33,7 +33,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen overflow-x-hidden">
-      <div className="max-w-2xl mx-auto px-5 py-10 md:py-20 space-y-5">
+      <div className="max-w-2xl mx-auto px-5 py-12 md:py-24 space-y-8 md:space-y-10">
         {/* Hero Section */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -41,11 +41,6 @@ const Index = () => {
           transition={{ duration: 0.8 }}
           className="text-center relative px-6 pt-4 pb-14 md:pt-6 md:pb-20"
         >
-          {/* Subtle background blob */}
-          <div
-            className="absolute -top-16 -left-16 w-48 h-48 rounded-full opacity-[0.04] pointer-events-none blur-3xl"
-            style={{ background: 'hsl(350 72% 55%)' }}
-          />
 
           <div className="relative z-10">
             <motion.p
@@ -103,7 +98,7 @@ const Index = () => {
         <DailyBabyCard dailyInfo={dailyInfo} />
 
         {/* Cultural Facts */}
-        <div className="grid md:grid-cols-2 gap-4">
+        <div className="grid md:grid-cols-2 gap-5">
           <CulturalFactCard fact={czech} label="Today from Czechia" />
           <CulturalFactCard fact={finnish} label="Today from Finland" />
         </div>

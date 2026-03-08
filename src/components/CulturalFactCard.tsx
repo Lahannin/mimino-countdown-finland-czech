@@ -17,16 +17,11 @@ export function CulturalFactCard({ fact, label }: CulturalFactCardProps) {
       transition={{ duration: 0.5, delay: isFinland ? 0.1 : 0 }}
       className="rounded-3xl p-5 md:p-6 shadow-soft relative overflow-hidden"
       style={{
-        background: isFinland
-          ? 'linear-gradient(145deg, hsl(215 60% 50% / 0.03), hsl(0 0% 100% / 0.7))'
-          : 'linear-gradient(145deg, hsl(355 70% 50% / 0.03), hsl(0 0% 100% / 0.7))',
+        background: 'hsl(0 0% 100% / 0.55)',
+        backdropFilter: 'blur(16px)',
+        border: '1px solid hsl(0 0% 0% / 0.04)',
       }}
     >
-      {/* Accent dot */}
-      <div
-        className="absolute -top-4 -right-4 w-16 h-16 rounded-full opacity-[0.03] blur-xl pointer-events-none"
-        style={{ background: isFinland ? 'hsl(215 60% 50%)' : 'hsl(355 70% 50%)' }}
-      />
 
       <div
         className="w-8 h-8 rounded-lg flex items-center justify-center text-lg mb-3"
