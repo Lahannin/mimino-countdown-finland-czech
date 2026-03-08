@@ -54,10 +54,10 @@ export function BabyDevelopmentCard({ weekData }: BabyDevelopmentCardProps) {
       </div>
 
       <div className="mt-4 space-y-2">
-        <div className="bg-czech/8 rounded-2xl px-4 py-3 border border-czech/10">
+        <div className="rounded-2xl px-4 py-3 border border-border/50" style={{ background: 'hsl(0 0% 0% / 0.02)' }}>
           <p className="font-body text-sm leading-relaxed">{weekData.czechComparison}</p>
         </div>
-        <div className="bg-finn/8 rounded-2xl px-4 py-3 border border-finn/10">
+        <div className="rounded-2xl px-4 py-3 border border-border/50" style={{ background: 'hsl(0 0% 0% / 0.02)' }}>
           <p className="font-body text-sm leading-relaxed">{weekData.finnComparison}</p>
         </div>
       </div>

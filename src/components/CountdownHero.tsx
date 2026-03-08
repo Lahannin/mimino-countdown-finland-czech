@@ -50,9 +50,9 @@ export function CountdownHero({ days, hours, minutes, seconds }: CountdownHeroPr
             <div
               className="rounded-2xl w-16 h-20 md:w-24 md:h-28 flex items-center justify-center"
               style={{
-                background: 'hsl(0 0% 100% / 0.6)',
-                border: '1px solid hsl(350 72% 55% / 0.1)',
-                boxShadow: '0 4px 16px hsl(350 72% 55% / 0.08)',
+                background: 'hsl(0 0% 100% / 0.5)',
+                border: '1px solid hsl(0 0% 0% / 0.05)',
+                boxShadow: '0 2px 8px hsl(0 0% 0% / 0.04)',
               }}
             >
               <span

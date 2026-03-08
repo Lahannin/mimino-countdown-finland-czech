@@ -70,7 +70,7 @@ const Index = () => {
                   textShadow: 'none',
                 }}
                 animate={{ backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'] }}
-                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+                transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
               >
                 mimino
               </motion.span>
