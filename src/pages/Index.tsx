@@ -99,8 +99,8 @@ const Index = () => {
 
         {/* Cultural Facts */}
         <div className="grid md:grid-cols-2 gap-5">
-          <CulturalFactCard fact={czech} label="Today from Czechia" />
-          <CulturalFactCard fact={finnish} label="Today from Finland" />
+          <CulturalFactCard fact={czech} label="Daily thought from Czechia" />
+          <CulturalFactCard fact={finnish} label="Daily thought from Finland" />
         </div>
 
         {/* Bilingual word of the day */}
