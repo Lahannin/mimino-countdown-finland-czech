@@ -12,17 +12,6 @@ import { getDailyWord } from "@/data/bilingualWords";
 
 const DUE_DATE = new Date(2026, 4, 22); // May 22, 2026
 
-const floatingAnim = {
-  y: [0, -6, 0] as number[],
-  rotate: [0, 5, -5, 0] as number[],
-};
-
-const floatingTransition = {
-  duration: 4,
-  repeat: Infinity,
-  ease: "easeInOut" as const,
-};
-
 const Index = () => {
   const [now, setNow] = useState(new Date());
 
@@ -52,42 +41,11 @@ const Index = () => {
           transition={{ duration: 0.8 }}
           className="text-center relative px-6 pt-4 pb-14 md:pt-6 md:pb-20"
         >
-          {/* Decorative blobs */}
+          {/* Subtle background blob */}
           <motion.div
-            className="absolute -top-16 -left-16 w-48 h-48 rounded-full opacity-15 pointer-events-none"
-            style={{ background: 'radial-gradient(circle, hsl(350 72% 55%), transparent)' }}
-            animate={{ y: [0, -10, 0], x: [0, 5, 0] }}
-            transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+            className="absolute -top-16 -left-16 w-48 h-48 rounded-full opacity-10 pointer-events-none blur-2xl"
+            style={{ background: 'hsl(350 72% 55%)' }}
           />
-          <motion.div
-            className="absolute -bottom-12 -right-12 w-40 h-40 rounded-full opacity-10 pointer-events-none"
-            style={{ background: 'radial-gradient(circle, hsl(165 35% 55%), transparent)' }}
-            animate={{ y: [0, 8, 0], x: [0, -4, 0] }}
-            transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-          />
-
-          {/* Floating sparkles */}
-          <motion.span
-            className="absolute top-6 left-[10%] text-2xl opacity-30 pointer-events-none"
-            animate={{ y: [0, -12, 0], x: [0, 4, 0], rotate: [0, 15, 0] }}
-            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-          >
-            ✨
-          </motion.span>
-          <motion.span
-            className="absolute top-8 right-[12%] text-xl opacity-25 pointer-events-none"
-            animate={{ y: [0, -8, 0], x: [0, -5, 0], rotate: [0, -10, 0] }}
-            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-          >
-            💕
-          </motion.span>
-          <motion.span
-            className="absolute bottom-8 left-[20%] text-lg opacity-20 pointer-events-none"
-            animate={{ y: [0, -6, 0], rotate: [0, 8, -8, 0] }}
-            transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-          >
-            🌸
-          </motion.span>
 
           <div className="relative z-10">
             <motion.p
@@ -160,27 +118,11 @@ const Index = () => {
           transition={{ delay: 1.2 }}
           className="text-center pt-4 pb-10"
         >
-          <motion.div
-            className="inline-flex items-center gap-2 bg-card/60 backdrop-blur-sm rounded-full px-5 py-2.5 border border-border/50"
-            whileHover={{ scale: 1.03 }}
-            transition={{ type: "spring", stiffness: 300 }}
-          >
+          <div className="inline-flex items-center gap-2 bg-card/60 backdrop-blur-sm rounded-full px-5 py-2.5 border border-border/50">
             <span className="text-xs text-muted-foreground font-body">
-              22. května 2026 ·{" "}
-              <motion.span className="inline-block" animate={floatingAnim} transition={floatingTransition}>🇨🇿</motion.span>
-              {" "}Maminka{" "}
-              <motion.span
-                className="inline-block"
-                animate={{ scale: [1, 1.2, 1] }}
-                transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-              >
-                ❤️
-              </motion.span>
-              {" "}
-              <motion.span className="inline-block" animate={floatingAnim} transition={floatingTransition}>🇫🇮</motion.span>
-              {" "}Isä
+              22. května 2026 · 🇨🇿 Maminka ❤️ 🇫🇮 Isä
             </span>
-          </motion.div>
+          </div>
         </motion.div>
       </div>
     </div>

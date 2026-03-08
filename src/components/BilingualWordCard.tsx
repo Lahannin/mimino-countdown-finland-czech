@@ -16,14 +16,12 @@ export function BilingualWordCard({ word }: BilingualWordCardProps) {
       style={{ background: 'linear-gradient(145deg, hsl(280 50% 62% / 0.12), hsl(0 0% 100% / 0.75), hsl(330 65% 58% / 0.12))', border: '1px solid hsl(280 50% 62% / 0.18)' }}
     >
       <div className="flex items-center gap-3 mb-5">
-        <motion.div
+        <div
           className="w-10 h-10 rounded-xl flex items-center justify-center text-2xl"
           style={{ background: 'linear-gradient(135deg, hsl(280 50% 62% / 0.1), hsl(330 65% 58% / 0.1))' }}
-          animate={{ scale: [1, 1.1, 1], rotate: [0, 5, -5, 0] }}
-          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
         >
           {word.emoji}
-        </motion.div>
+        </div>
         <div>
           <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground font-body font-medium">Word of the day</p>
           <p className="text-sm font-body text-muted-foreground">{word.english}</p>

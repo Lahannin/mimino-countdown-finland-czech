@@ -24,22 +24,18 @@ export function CulturalFactCard({ fact, label }: CulturalFactCardProps) {
       }}
     >
       {/* Accent dot */}
-      <motion.div
-        className="absolute -top-4 -right-4 w-20 h-20 rounded-full opacity-[0.1] blur-xl"
+      <div
+        className="absolute -top-4 -right-4 w-16 h-16 rounded-full opacity-[0.06] blur-lg pointer-events-none"
         style={{ background: isFinland ? 'hsl(215 60% 50%)' : 'hsl(355 70% 50%)' }}
-        animate={{ scale: [1, 1.15, 1] }}
-        transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
       />
 
-      <motion.div
+      <div
         className={`w-8 h-8 rounded-lg flex items-center justify-center text-lg mb-3 ${
           isFinland ? "bg-finn/15" : "bg-czech/15"
         }`}
-        whileHover={{ scale: 1.15, rotate: 5 }}
-        transition={{ type: "spring", stiffness: 400 }}
       >
         {isFinland ? "🇫🇮" : "🇨🇿"}
-      </motion.div>
+      </div>
       <h3 className="text-[10px] font-body font-semibold uppercase tracking-[0.2em] text-muted-foreground mb-2">
         {label}
       </h3>

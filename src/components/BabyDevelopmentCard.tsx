@@ -16,14 +16,12 @@ export function BabyDevelopmentCard({ weekData }: BabyDevelopmentCardProps) {
       style={{ background: 'linear-gradient(145deg, hsl(280 50% 62% / 0.12), hsl(0 0% 100% / 0.75), hsl(330 65% 58% / 0.12))', border: '1px solid hsl(280 50% 62% / 0.18)' }}
     >
       <div className="flex items-center gap-4">
-        <motion.div
+        <div
           className="w-14 h-14 md:w-16 md:h-16 rounded-2xl flex items-center justify-center text-4xl md:text-5xl"
           style={{ background: 'linear-gradient(135deg, hsl(280 50% 62% / 0.1), hsl(330 65% 58% / 0.1))' }}
-          animate={{ rotate: [0, 5, -5, 0] }}
-          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
         >
           {weekData.sizeEmoji}
-        </motion.div>
+        </div>
         <div className="flex-1">
           <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground font-body font-medium mb-0.5">This week</p>
           <h2 className="text-2xl md:text-3xl font-display font-semibold">

@@ -16,13 +16,9 @@ export function DailyBabyCard({ dailyInfo }: DailyBabyCardProps) {
       style={{ background: 'linear-gradient(135deg, hsl(350 72% 55% / 0.08), hsl(15 80% 85% / 0.35), hsl(0 0% 100% / 0.7))' }}
     >
       <div className="flex items-center gap-3 mb-3">
-        <motion.div
-          className="w-10 h-10 rounded-xl bg-card/80 flex items-center justify-center text-2xl shadow-sm"
-          animate={{ y: [0, -3, 0] }}
-          transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-        >
+        <div className="w-10 h-10 rounded-xl bg-card/80 flex items-center justify-center text-2xl shadow-sm">
           {dailyInfo.sizeEmoji}
-        </motion.div>
+        </div>
         <div>
           <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground font-body font-medium">Today's update</p>
           <h3 className="text-lg font-display font-semibold">{dailyInfo.dayTitle}</h3>
@@ -36,17 +32,9 @@ export function DailyBabyCard({ dailyInfo }: DailyBabyCardProps) {
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.8 }}
-        whileHover={{ scale: 1.01 }}
       >
         <p className="text-sm font-body text-muted-foreground">
-          <motion.span
-            className="inline-block mr-1"
-            animate={{ rotate: [0, 15, -15, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-          >
-            💡
-          </motion.span>
-          <span className="font-semibold text-foreground">Tip:</span> {dailyInfo.tip}
+          💡 <span className="font-semibold text-foreground">Tip:</span> {dailyInfo.tip}
         </p>
       </motion.div>
     </motion.div>
