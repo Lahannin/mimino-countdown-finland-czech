@@ -17,9 +17,9 @@ export function CulturalFactCard({ fact, label }: CulturalFactCardProps) {
       transition={{ duration: 0.5, delay: isFinland ? 0.1 : 0 }}
       className="rounded-3xl p-5 md:p-6 shadow-soft relative overflow-hidden"
       style={{
-        background: 'hsl(0 0% 100% / 0.6)',
-        backdropFilter: 'blur(16px)',
-        border: '1px solid hsl(0 0% 0% / 0.06)',
+        background: isFinland
+          ? 'linear-gradient(145deg, hsl(215 60% 50% / 0.03), hsl(0 0% 100% / 0.7))'
+          : 'linear-gradient(145deg, hsl(355 70% 50% / 0.03), hsl(0 0% 100% / 0.7))',
       }}
     >
       {/* Accent dot */}
