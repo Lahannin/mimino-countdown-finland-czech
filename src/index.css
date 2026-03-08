@@ -87,10 +87,15 @@
     @apply border-border;
   }
 
+  html {
+    background-color: hsl(var(--background));
+  }
+
   body {
     @apply bg-background text-foreground;
     background: var(--gradient-page);
     min-height: 100vh;
+    overscroll-behavior: none;
   }
 
   h1, h2, h3, h4 {
