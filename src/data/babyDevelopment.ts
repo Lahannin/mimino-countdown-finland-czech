@@ -41,7 +41,7 @@ const weekSummaries: WeekSummary[] = [
     finnComparison: "🇫🇮 As heavy as a sauna löyly bucket (empty, don't worry). Time to warm up!",
     czechComparison: "🇨🇿 As long as a Czech garden gnome. Yes, every babička has one 🧙" },
   { week: 34, size: "Cantaloupe", sizeEmoji: "🍈", sizeComparison: "About as big as a cantaloupe", sizeCzech: "cukrový meloun", sizeFinnish: "cantaloupe-meloni", weight: "~2.1 kg", length: "~44 cm",
-    finnComparison: "🇫🇮 As heavy as 6 packages of Karelian pies. Isä is drooling! 🥟",
+    finnComparison: "🇫🇮 As heavy as 6 packages of Karelian pies. Isi is drooling! 🥟",
     czechComparison: "🇨🇿 Length of 4 koláče lined up. Babička is already baking! 🥧" },
   { week: 35, size: "Honeydew melon", sizeEmoji: "🍈", sizeComparison: "Size of a honeydew melon", sizeCzech: "medový meloun", sizeFinnish: "hunajameloni", weight: "~2.4 kg", length: "~46 cm",
     finnComparison: "🇫🇮 Weighs the same as 12 bars of Fazer Blue chocolate. Nom! 🍫",
