@@ -40,10 +40,10 @@ const Index = () => {
           transition={{ duration: 0.8 }}
           className="text-center pb-2"
         >
-          <h1 className="text-4xl md:text-6xl font-display tracking-tight leading-tight">
-            Ahoj, <span className="italic text-primary">mimino</span>
+          <h1 className="text-5xl md:text-7xl font-display tracking-tight leading-tight">
+            Ahoj, <span className="italic text-primary" style={{ textShadow: '0 2px 20px hsl(350 72% 55% / 0.2)' }}>mimino</span>
           </h1>
-          <p className="mt-3 text-muted-foreground text-base font-body">
+          <p className="mt-4 text-muted-foreground text-base md:text-lg font-body">
             🇨🇿 Czech maminka & 🇫🇮 Finnish isä · a holka is on the way!
           </p>
         </motion.div>
