@@ -8,10 +8,11 @@ import { BilingualWordCard } from "@/components/BilingualWordCard";
 import { getWeekSummary, getDailyBabyInfo } from "@/data/babyDevelopment";
 import { getDailyFacts } from "@/data/culturalFacts";
 import { getDailyWord } from "@/data/bilingualWords";
+import type { Transition } from "framer-motion";
 
 const DUE_DATE = new Date(2026, 4, 22); // May 22, 2026
 
-const floatingHeart = {
+const floatingHeart: { animate: object; transition: Transition } = {
   animate: {
     y: [0, -6, 0],
     rotate: [0, 5, -5, 0],
@@ -19,7 +20,7 @@ const floatingHeart = {
   transition: {
     duration: 4,
     repeat: Infinity,
-    ease: "easeInOut",
+    ease: "easeInOut" as const,
   },
 };
 
