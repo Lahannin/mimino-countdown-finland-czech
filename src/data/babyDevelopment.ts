@@ -13,6 +13,8 @@ export interface WeekSummary {
   size: string;
   sizeEmoji: string;
   sizeComparison: string;
+  sizeCzech: string;
+  sizeFinnish: string;
   weight: string;
   length: string;
   finnComparison: string;
@@ -20,43 +22,43 @@ export interface WeekSummary {
 }
 
 const weekSummaries: WeekSummary[] = [
-  { week: 28, size: "Eggplant", sizeEmoji: "🍆", sizeComparison: "About as big as an eggplant", weight: "~1.0 kg", length: "~37 cm",
+  { week: 28, size: "Eggplant", sizeEmoji: "🍆", sizeComparison: "About as big as an eggplant", sizeCzech: "lilek", sizeFinnish: "munakoiso", weight: "~1.0 kg", length: "~37 cm",
     finnComparison: "🇫🇮 About as long as a kantele (the small travel-size one isä pretends to play)",
     czechComparison: "🇨🇿 Weighs as much as a big wheel of Olomoucké tvarůžky, and smells better!" },
-  { week: 29, size: "Butternut squash", sizeEmoji: "🎃", sizeComparison: "Size of a butternut squash", weight: "~1.1 kg", length: "~38 cm",
+  { week: 29, size: "Butternut squash", sizeEmoji: "🎃", sizeComparison: "Size of a butternut squash", sizeCzech: "máslová dýně", sizeFinnish: "myskikurpitsa", weight: "~1.1 kg", length: "~38 cm",
     finnComparison: "🇫🇮 As heavy as 2 bags of Fazer salmiakki, isä's favorite!",
     czechComparison: "🇨🇿 Length of 2 Pilsner Urquell cans stacked up. Cheers, mimino! 🍺" },
-  { week: 30, size: "Cabbage", sizeEmoji: "🥬", sizeComparison: "About the size of a cabbage", weight: "~1.3 kg", length: "~39 cm",
+  { week: 30, size: "Cabbage", sizeEmoji: "🥬", sizeComparison: "About the size of a cabbage", sizeCzech: "zelí", sizeFinnish: "kaali", weight: "~1.3 kg", length: "~39 cm",
     finnComparison: "🇫🇮 As long as a Finnish makkara (sausage) from the grill. Mökki vibes!",
     czechComparison: "🇨🇿 Weighs as much as 3 trdelníky! That's a lot of cinnamon sugar 🍩" },
-  { week: 31, size: "Coconut", sizeEmoji: "🥥", sizeComparison: "Size of a coconut", weight: "~1.5 kg", length: "~41 cm",
+  { week: 31, size: "Coconut", sizeEmoji: "🥥", sizeComparison: "Size of a coconut", sizeCzech: "kokos", sizeFinnish: "kookospähkinä", weight: "~1.5 kg", length: "~41 cm",
     finnComparison: "🇫🇮 As heavy as a Moomin mug collection starter pack (3 mugs)! ☕",
     czechComparison: "🇨🇿 As tall as a Krteček plush toy! The little mole would be proud 🐾" },
-  { week: 32, size: "Napa cabbage", sizeEmoji: "🥬", sizeComparison: "Length of a napa cabbage", weight: "~1.7 kg", length: "~42 cm",
+  { week: 32, size: "Napa cabbage", sizeEmoji: "🥬", sizeComparison: "Length of a napa cabbage", sizeCzech: "čínské zelí", sizeFinnish: "kiinankaali", weight: "~1.7 kg", length: "~42 cm",
     finnComparison: "🇫🇮 Weighs about as much as a pair of Finnish rubber boots (size child). Ready for puddles!",
     czechComparison: "🇨🇿 As long as a Kofola bottle! The superior cola, of course 🥤" },
-  { week: 33, size: "Pineapple", sizeEmoji: "🍍", sizeComparison: "Size of a pineapple", weight: "~1.9 kg", length: "~43 cm",
+  { week: 33, size: "Pineapple", sizeEmoji: "🍍", sizeComparison: "Size of a pineapple", sizeCzech: "ananas", sizeFinnish: "ananas", weight: "~1.9 kg", length: "~43 cm",
     finnComparison: "🇫🇮 As heavy as a sauna löyly bucket (empty, don't worry). Time to warm up!",
     czechComparison: "🇨🇿 As long as a Czech garden gnome. Yes, every babička has one 🧙" },
-  { week: 34, size: "Cantaloupe", sizeEmoji: "🍈", sizeComparison: "About as big as a cantaloupe", weight: "~2.1 kg", length: "~44 cm",
+  { week: 34, size: "Cantaloupe", sizeEmoji: "🍈", sizeComparison: "About as big as a cantaloupe", sizeCzech: "cukrový meloun", sizeFinnish: "cantaloupe-meloni", weight: "~2.1 kg", length: "~44 cm",
     finnComparison: "🇫🇮 As heavy as 6 packages of Karelian pies. Isä is drooling! 🥟",
     czechComparison: "🇨🇿 Length of 4 koláče lined up. Babička is already baking! 🥧" },
-  { week: 35, size: "Honeydew melon", sizeEmoji: "🍈", sizeComparison: "Size of a honeydew melon", weight: "~2.4 kg", length: "~46 cm",
+  { week: 35, size: "Honeydew melon", sizeEmoji: "🍈", sizeComparison: "Size of a honeydew melon", sizeCzech: "medový meloun", sizeFinnish: "hunajameloni", weight: "~2.4 kg", length: "~46 cm",
     finnComparison: "🇫🇮 Weighs the same as 5 packages of Fazer Blue chocolate. Nom! 🍫",
     czechComparison: "🇨🇿 As long as a Prague ham (Pražská šunka). A delicacy! 🍖" },
-  { week: 36, size: "Romaine lettuce", sizeEmoji: "🥬", sizeComparison: "Length of romaine lettuce", weight: "~2.6 kg", length: "~47 cm",
+  { week: 36, size: "Romaine lettuce", sizeEmoji: "🥬", sizeComparison: "Length of romaine lettuce", sizeCzech: "římský salát", sizeFinnish: "roomansalaatti", weight: "~2.6 kg", length: "~47 cm",
     finnComparison: "🇫🇮 As heavy as a Nokia 3310… times 26. Unbreakable baby! 📱",
     czechComparison: "🇨🇿 As long as 3 Pilsner Urquell bottles. That's one serious lineup! 🍺🍺🍺" },
-  { week: 37, size: "Swiss chard", sizeEmoji: "🌿", sizeComparison: "Size of a Swiss chard bunch", weight: "~2.9 kg", length: "~48 cm",
+  { week: 37, size: "Swiss chard", sizeEmoji: "🌿", sizeComparison: "Size of a Swiss chard bunch", sizeCzech: "mangold", sizeFinnish: "lehtimangoldi", weight: "~2.9 kg", length: "~48 cm",
     finnComparison: "🇫🇮 Almost as heavy as a baby reindeer at birth. They'd be twins! 🦌",
     czechComparison: "🇨🇿 As tall as a Hurvínek puppet! Ready for her stage debut 🎭" },
-  { week: 38, size: "Leek", sizeEmoji: "🥒", sizeComparison: "Length of a leek", weight: "~3.1 kg", length: "~49 cm",
+  { week: 38, size: "Leek", sizeEmoji: "🥒", sizeComparison: "Length of a leek", sizeCzech: "pórek", sizeFinnish: "purjosipuli", weight: "~3.1 kg", length: "~49 cm",
     finnComparison: "🇫🇮 Weighs about the same as a full bag of pulla dough. Baking time! 🧁",
     czechComparison: "🇨🇿 As long as a standard Czech hockey stick (for babies, obviously) 🏒" },
-  { week: 39, size: "Watermelon", sizeEmoji: "🍉", sizeComparison: "Small watermelon size", weight: "~3.3 kg", length: "~50 cm",
+  { week: 39, size: "Watermelon", sizeEmoji: "🍉", sizeComparison: "Small watermelon size", sizeCzech: "vodní meloun", sizeFinnish: "vesimeloni", weight: "~3.3 kg", length: "~50 cm",
     finnComparison: "🇫🇮 Half a meter! That's the length of a proper Finnish birch vihta for sauna 🧖",
     czechComparison: "🇨🇿 Weighs as much as 10 Becherovka mini bottles. Na zdraví! 🥃" },
-  { week: 40, size: "Pumpkin", sizeEmoji: "🎃", sizeComparison: "Size of a small pumpkin", weight: "~3.5 kg", length: "~51 cm",
+  { week: 40, size: "Pumpkin", sizeEmoji: "🎃", sizeComparison: "Size of a small pumpkin", sizeCzech: "dýně", sizeFinnish: "kurpitsa", weight: "~3.5 kg", length: "~51 cm",
     finnComparison: "🇫🇮 As heavy as the Finnish maternity box she'll get from isä's homeland! 📦",
     czechComparison: "🇨🇿 As long as 4 rohlíky (Czech bread rolls) in a row. Snídaně time! 🥖" },
 ];
