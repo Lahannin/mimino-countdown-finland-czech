@@ -50,12 +50,7 @@ const Index = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center relative rounded-3xl px-6 py-14 md:py-20 overflow-hidden"
-          style={{
-            background: 'linear-gradient(160deg, hsl(350 72% 55% / 0.10), hsl(0 0% 100% / 0.7) 40%, hsl(165 35% 55% / 0.08) 70%, hsl(350 72% 55% / 0.06))',
-            border: '1px solid hsl(350 72% 55% / 0.12)',
-            boxShadow: '0 16px 48px -12px hsl(350 72% 55% / 0.12)',
-          }}
+          className="text-center relative px-6 py-14 md:py-20 overflow-hidden"
         >
           {/* Decorative blobs */}
           <motion.div
