@@ -29,7 +29,7 @@ export function CountdownHero({ days, hours, minutes, seconds }: CountdownHeroPr
     >
       {/* Decorative blobs */}
       <motion.div
-        className="absolute -top-16 -right-16 w-40 h-40 rounded-full opacity-20 blur-2xl"
+        className="absolute -top-14 -right-14 w-36 h-36 rounded-full opacity-20 blur-xl"
         style={{ background: 'hsl(350 72% 55%)' }}
         animate={{ y: [0, -8, 0], x: [0, 4, 0] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
