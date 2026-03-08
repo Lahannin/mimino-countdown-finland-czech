@@ -34,7 +34,7 @@ export function BilingualWordCard({ word }: BilingualWordCardProps) {
         </div>
 
         {/* Finnish */}
-        <div className="bg-finn/8 rounded-2xl p-4 border border-finn/10 text-center">
+        <div className="bg-finn/12 rounded-2xl p-4 border border-finn/15 text-center">
           <p className="text-[10px] uppercase tracking-[0.15em] text-muted-foreground font-body font-medium mb-1">🇫🇮 Suomi</p>
           <p className="text-xl md:text-2xl font-display font-bold">{word.finnish}</p>
           {word.pronunciation_fi && (
