@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/mimino-countdown-finland-czech/",
+  base: mode === "production" ? "/mimino-countdown-finland-czech/" : "/",
   server: {
     host: "::",
     port: 8080,
