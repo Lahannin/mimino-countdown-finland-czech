@@ -25,7 +25,7 @@ export function CountdownHero({ days, hours, minutes, seconds }: CountdownHeroPr
       <p className="text-muted-foreground font-body text-sm uppercase tracking-widest mb-4">
         Countdown to meeting her
       </p>
-      <div className="flex justify-center gap-4 md:gap-8">
+      <div className="flex justify-center gap-2 md:gap-4">
         {units.map((unit) => (
           <div key={unit.label} className="flex flex-col items-center w-16 md:w-24">
             <span className="text-4xl md:text-7xl font-display font-bold text-foreground tabular-nums" style={{ fontVariantNumeric: 'tabular-nums', letterSpacing: '0.02em' }}>
