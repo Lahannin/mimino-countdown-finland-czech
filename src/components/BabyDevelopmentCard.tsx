@@ -37,8 +37,9 @@ export function BabyDevelopmentCard({ weekData }: BabyDevelopmentCardProps) {
 
       <div className="mt-5 grid grid-cols-2 gap-3">
         <motion.div
-          className="bg-foreground/[0.03] rounded-2xl p-4 text-center"
-          whileHover={{ scale: 1.03, background: 'hsl(330 65% 58% / 0.06)' }}
+          className="rounded-2xl p-4 text-center"
+          style={{ background: 'hsl(330 65% 58% / 0.08)' }}
+          whileHover={{ scale: 1.03, background: 'hsl(330 65% 58% / 0.14)' }}
           transition={{ type: "spring", stiffness: 400 }}
         >
           <p className="text-[10px] text-muted-foreground uppercase tracking-[0.15em] font-body font-medium">Weight</p>
