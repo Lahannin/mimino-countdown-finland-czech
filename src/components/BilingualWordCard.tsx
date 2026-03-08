@@ -17,7 +17,8 @@ export function BilingualWordCard({ word }: BilingualWordCardProps) {
     >
       <div className="flex items-center gap-3 mb-5">
         <motion.div
-          className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center text-2xl"
+          className="w-10 h-10 rounded-xl flex items-center justify-center text-2xl"
+          style={{ background: 'linear-gradient(135deg, hsl(280 50% 62% / 0.1), hsl(330 65% 58% / 0.1))' }}
           animate={{ scale: [1, 1.1, 1], rotate: [0, 5, -5, 0] }}
           transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
         >
