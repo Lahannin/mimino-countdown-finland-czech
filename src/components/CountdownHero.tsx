@@ -21,11 +21,11 @@ export function CountdownHero({ days, hours, minutes, seconds }: CountdownHeroPr
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5 }}
-      className="rounded-3xl p-8 md:p-12 text-center shadow-elevated overflow-hidden relative"
+      className="rounded-3xl p-8 md:p-12 text-center shadow-soft overflow-hidden relative"
       style={{
-        background: 'linear-gradient(135deg, hsl(350 72% 55% / 0.08), hsl(0 0% 100% / 0.85), hsl(215 60% 50% / 0.06))',
-        backdropFilter: 'blur(20px)',
-        border: '1px solid hsl(350 72% 55% / 0.12)',
+        background: 'hsl(0 0% 100% / 0.6)',
+        backdropFilter: 'blur(16px)',
+        border: '1px solid hsl(0 0% 0% / 0.06)',
       }}
     >
       {/* Subtle accent */}
