@@ -27,11 +27,7 @@ export function DailyBabyCard({ dailyInfo }: DailyBabyCardProps) {
       <p className="font-body text-foreground/90 leading-relaxed text-[15px]">
         {dailyInfo.funFact}
       </p>
-      <motion.div
-        className="mt-4 bg-card/60 backdrop-blur-sm rounded-2xl px-4 py-3 border border-border/50"
-        initial={{ opacity: 0, y: 8 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.8 }}
+      <div className="mt-4 bg-card/60 backdrop-blur-sm rounded-2xl px-4 py-3 border border-border/50">
       >
         <p className="text-sm font-body text-muted-foreground">
           💡 <span className="font-semibold text-foreground">Tip:</span> {dailyInfo.tip}
