@@ -24,7 +24,7 @@ export function CulturalFactCard({ fact, label }: CulturalFactCardProps) {
     >
       {/* Accent dot */}
       <div
-        className="absolute -top-4 -right-4 w-16 h-16 rounded-full opacity-[0.06] blur-lg pointer-events-none"
+        className="absolute -top-4 -right-4 w-16 h-16 rounded-full opacity-[0.03] blur-xl pointer-events-none"
         style={{ background: isFinland ? 'hsl(215 60% 50%)' : 'hsl(355 70% 50%)' }}
       />
 
