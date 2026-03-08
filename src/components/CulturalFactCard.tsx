@@ -22,11 +22,6 @@ export function CulturalFactCard({ fact, label }: CulturalFactCardProps) {
         border: '1px solid hsl(0 0% 0% / 0.04)',
       }}
     >
-      {/* Accent dot */}
-      <div
-        className="absolute -top-4 -right-4 w-16 h-16 rounded-full opacity-[0.03] blur-xl pointer-events-none"
-        style={{ background: isFinland ? 'hsl(215 60% 50%)' : 'hsl(355 70% 50%)' }}
-      />
 
       <div
         className="w-8 h-8 rounded-lg flex items-center justify-center text-lg mb-3"
