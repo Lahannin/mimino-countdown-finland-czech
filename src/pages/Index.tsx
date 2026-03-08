@@ -118,27 +118,11 @@ const Index = () => {
           transition={{ delay: 1.2 }}
           className="text-center pt-4 pb-10"
         >
-          <motion.div
-            className="inline-flex items-center gap-2 bg-card/60 backdrop-blur-sm rounded-full px-5 py-2.5 border border-border/50"
-            whileHover={{ scale: 1.03 }}
-            transition={{ type: "spring", stiffness: 300 }}
-          >
+          <div className="inline-flex items-center gap-2 bg-card/60 backdrop-blur-sm rounded-full px-5 py-2.5 border border-border/50">
             <span className="text-xs text-muted-foreground font-body">
-              22. května 2026 ·{" "}
-              <motion.span className="inline-block" animate={floatingAnim} transition={floatingTransition}>🇨🇿</motion.span>
-              {" "}Maminka{" "}
-              <motion.span
-                className="inline-block"
-                animate={{ scale: [1, 1.2, 1] }}
-                transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-              >
-                ❤️
-              </motion.span>
-              {" "}
-              <motion.span className="inline-block" animate={floatingAnim} transition={floatingTransition}>🇫🇮</motion.span>
-              {" "}Isä
+              22. května 2026 · 🇨🇿 Maminka ❤️ 🇫🇮 Isä
             </span>
-          </motion.div>
+          </div>
         </motion.div>
       </div>
     </div>
