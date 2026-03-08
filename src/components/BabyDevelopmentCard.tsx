@@ -11,13 +11,14 @@ export function BabyDevelopmentCard({ weekData }: BabyDevelopmentCardProps) {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 0.4 }}
-      whileHover={{ y: -2, boxShadow: '0 12px 40px -8px hsl(280 50% 62% / 0.15)' }}
+      whileHover={{ y: -2, boxShadow: '0 12px 40px -8px hsl(280 50% 62% / 0.25)' }}
       className="rounded-3xl p-6 md:p-8 shadow-soft overflow-hidden relative"
-      style={{ background: 'linear-gradient(145deg, hsl(280 50% 62% / 0.06), hsl(0 0% 100% / 0.8), hsl(330 65% 58% / 0.06))', border: '1px solid hsl(280 50% 62% / 0.12)' }}
+      style={{ background: 'linear-gradient(145deg, hsl(280 50% 62% / 0.12), hsl(0 0% 100% / 0.75), hsl(330 65% 58% / 0.12))', border: '1px solid hsl(280 50% 62% / 0.18)' }}
     >
       <div className="flex items-center gap-4">
         <motion.div
-          className="w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-foreground/[0.04] flex items-center justify-center text-4xl md:text-5xl"
+          className="w-14 h-14 md:w-16 md:h-16 rounded-2xl flex items-center justify-center text-4xl md:text-5xl"
+          style={{ background: 'linear-gradient(135deg, hsl(280 50% 62% / 0.1), hsl(330 65% 58% / 0.1))' }}
           animate={{ rotate: [0, 5, -5, 0] }}
           transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
         >
@@ -36,16 +37,18 @@ export function BabyDevelopmentCard({ weekData }: BabyDevelopmentCardProps) {
 
       <div className="mt-5 grid grid-cols-2 gap-3">
         <motion.div
-          className="bg-foreground/[0.03] rounded-2xl p-4 text-center"
-          whileHover={{ scale: 1.03, background: 'hsl(330 65% 58% / 0.06)' }}
+          className="rounded-2xl p-4 text-center"
+          style={{ background: 'hsl(330 65% 58% / 0.08)' }}
+          whileHover={{ scale: 1.03, background: 'hsl(330 65% 58% / 0.14)' }}
           transition={{ type: "spring", stiffness: 400 }}
         >
           <p className="text-[10px] text-muted-foreground uppercase tracking-[0.15em] font-body font-medium">Weight</p>
           <p className="text-2xl font-display font-bold mt-1">{weekData.weight}</p>
         </motion.div>
         <motion.div
-          className="bg-foreground/[0.03] rounded-2xl p-4 text-center"
-          whileHover={{ scale: 1.03, background: 'hsl(280 50% 62% / 0.06)' }}
+          className="rounded-2xl p-4 text-center"
+          style={{ background: 'hsl(280 50% 62% / 0.08)' }}
+          whileHover={{ scale: 1.03, background: 'hsl(280 50% 62% / 0.14)' }}
           transition={{ type: "spring", stiffness: 400 }}
         >
           <p className="text-[10px] text-muted-foreground uppercase tracking-[0.15em] font-body font-medium">Length</p>
