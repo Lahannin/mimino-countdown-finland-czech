@@ -44,7 +44,7 @@ export const czechFacts: CulturalFact[] = [
   { country: "czech", emoji: "🎭", fact: "Czech puppet theater (loutkové divadlo) is UNESCO heritage. She'll love Spejbl and Hurvínek shows growing up!" },
   { country: "czech", emoji: "📖", fact: "Pohádky (fairy tales) by Božena Němcová are beloved Czech bedtime stories. Maminka will read them to her!" },
   { country: "czech", emoji: "🧊", fact: "Czechs love otužování (cold water exposure) for health. Many Czech kids grow up splashing in cold streams!" },
-  { country: "czech", emoji: "🧙", fact: "On April 30th, Czech kids celebrate čarodějnice (burning witches) — a fun spring bonfire tradition she'll love!" },
+  { country: "czech", emoji: "🧙", fact: "On April 30th, Czech kids celebrate čarodějnice (burning witches), a fun spring bonfire tradition she'll love!" },
   { country: "czech", emoji: "🥚", fact: "At Easter, Czech kids decorate kraslice (painted eggs) and boys get pomlázka (willow whips). A colorful tradition!" },
   { country: "czech", emoji: "🏊", fact: "Czech kids learn to swim early, with aquaparks and outdoor swimming spots everywhere. She'll be a little water baby!" },
   { country: "czech", emoji: "🧁", fact: "Trdelník (chimney cake) is a beloved Czech treat. Warm, sweet, and impossible for little hands to resist!" },
